@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-03-30T04:22:48+00:00",
+  "project_root": "C:\\Users\\SAMSUNG\\Downloads\\skill\\tmp-doc-orchestrator-parallel-test-20260330",
+  "project_name": "smoke-doc-app",
+  "docs_root_default": "C:\\Users\\SAMSUNG\\Downloads\\skill\\tmp-doc-orchestrator-parallel-test-20260330\\docs\\project-docs",
+  "inspected_files": [
+    "README.md",
+    "docs/usage.md",
+    "package.json",
+    "scripts/build.ps1"
+  ],
+  "manifests": [
+    {
+      "kind": "package.json",
+      "name": "smoke-doc-app",
+      "version": "0.1.0",
+      "summary": "npm package with 2 script(s)",
+      "commands": [
+        "npm run docs",
+        "npm run start"
+      ],
+      "script_names": [
+        "docs",
+        "start"
+      ],
+      "path": "package.json"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "scripts/build.ps1",
+      "kind": "ps1",
+      "summary": "Write-Output \"building smoke docs\"",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "path": "README.md",
+      "title": "Smoke Doc App",
+      "summary": "Existing Notes",
+      "headings": [
+        "Smoke Doc App",
+        "Existing Notes"
+      ]
+    },
+    {
+      "path": "docs/usage.md",
+      "title": "Notes",
+      "summary": "Usage",
+      "headings": [
+        "Notes",
+        "Usage"
+      ]
+    }
+  ],
+  "source_summary": {
+    "total_files": 12,
+    "counts_by_extension": {
+      ".md": 8,
+      ".json": 2,
+      ".ps1": 1,
+      ".py": 1
+    },
+    "top_level_entries": {
+      "docs": 7,
+      "package.json": 1,
+      "README.md": 1,
+      "snapshot.json": 1,
+      "scripts": 1,
+      "src": 1
+    }
+  },
+  "layout_tree": [
+    "tmp-doc-orchestrator-parallel-test-20260330/",
+    "|-- docs/",
+    "|   |-- project-docs/",
+    "|   |   |-- ARCHITECTURE.md",
+    "|   |   |-- CHANGELOG.md",
+    "|   |   |-- GUIDE.md",
+    "|   |   |-- LAYOUT.md",
+    "|   |   |-- PLAN.md",
+    "|   |   \\-- README.md",
+    "|   \\-- usage.md",
+    "|-- scripts/",
+    "|   \\-- build.ps1",
+    "|-- src/",
+    "|   \\-- main.py",
+    "|-- package.json",
+    "|-- README.md",
+    "\\-- snapshot.json"
+  ],
+  "git": {
+    "is_git_repo": true,
+    "branch": "master",
+    "recent_commits": [
+      {
+        "hash": "fe5517b",
+        "date": "2026-03-29",
+        "subject": "Initial smoke setup"
+      }
+    ],
+    "changed_files": [
+      " M docs/usage.md",
+      " M src/main.py",
+      "?? docs/project-docs/",
+      "?? snapshot.json"
+    ]
+  },
+  "todos": [
+    {
+      "path": "src/main.py",
+      "line": 2,
+      "text": "# TODO: replace smoke placeholder with the real app entrypoint"
+    }
+  ],
+  "commands": {
+    "from_manifests": [
+      "npm run docs",
+      "npm run start"
+    ],
+    "from_scripts": [
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1"
+    ]
+  },
+  "observations": [
+    "Detected 1 manifest/config file(s).",
+    "Inspected 1 runnable script file(s).",
+    "Inspected 2 existing documentation file(s).",
+    "Git repository detected on branch master with 1 recent commit(s).",
+    "Found 1 TODO/FIXME-style marker(s) in inspected text files."
+  ]
+}

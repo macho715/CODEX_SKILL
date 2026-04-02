@@ -1,0 +1,8 @@
+﻿{
+  "name": "smoke-doc-app",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "python src/main.py",
+    "docs": "python scripts/generate_docs.py"
+  }
+}
