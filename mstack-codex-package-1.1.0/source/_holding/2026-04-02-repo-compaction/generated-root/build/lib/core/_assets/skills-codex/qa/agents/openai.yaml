@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack QA"
+  short_description: "Run verification-only QA and propose regressions"
+  default_prompt: "Use this skill only for verification. Choose diff-aware, full, or quick mode, summarize test outcomes, and propose regression coverage. If the main task is root-cause analysis, prefer mstack-investigate."

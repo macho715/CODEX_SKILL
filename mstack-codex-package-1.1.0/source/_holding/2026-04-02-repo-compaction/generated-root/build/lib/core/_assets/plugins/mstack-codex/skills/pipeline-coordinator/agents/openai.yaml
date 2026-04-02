@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Pipeline Coordinator"
+  short_description: "Run a fixed four-lane decision engine for complex choices"
+  default_prompt: "Use this skill only when a request needs a fixed four-lane decision engine. Compare 3 or more options, preserve independent analysis, scoring, and verification lanes, and return the merged recommendation, scoring summary, verifier verdict, and remaining gaps."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Review"
+  short_description: "Review existing code or diffs and classify findings"
+  default_prompt: "Use this skill only when code or a diff already exists. Classify findings into AUTO-FIX and SURFACE, compare against the plan when available, and call out missing tests or completeness gaps. Prefer mstack-plan for pre-implementation design."

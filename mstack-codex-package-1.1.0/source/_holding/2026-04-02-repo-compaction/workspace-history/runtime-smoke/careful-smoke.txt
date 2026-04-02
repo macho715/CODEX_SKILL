@@ -1,0 +1,5 @@
+Risk: High, because `git push --force` to `main` can rewrite shared history, drop collaborators’ work, and bypass release/review safeguards.
+
+Blocked Action: Do not force-push to `main`.
+
+Safer Alternative: Push to a feature branch and open a PR, or use a non-forced merge/revert workflow; if history rewrite is absolutely required, get explicit team approval and coordinate a protected maintenance window first.

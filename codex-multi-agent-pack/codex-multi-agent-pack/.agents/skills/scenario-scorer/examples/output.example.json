@@ -1,0 +1,114 @@
+{
+  "criteria": [
+    {
+      "name": "Impact",
+      "weight": 35
+    },
+    {
+      "name": "Feasibility",
+      "weight": 25
+    },
+    {
+      "name": "Risk",
+      "weight": 20
+    },
+    {
+      "name": "Time-to-value",
+      "weight": 20
+    }
+  ],
+  "ranked_options": [
+    {
+      "name": "Option B",
+      "total_score": 85.0,
+      "breakdown": [
+        {
+          "criterion": "Impact",
+          "raw_score": 4.0,
+          "weight": 35.0,
+          "weighted_points": 28.0
+        },
+        {
+          "criterion": "Feasibility",
+          "raw_score": 5.0,
+          "weight": 25.0,
+          "weighted_points": 25.0
+        },
+        {
+          "criterion": "Risk",
+          "raw_score": 4.0,
+          "weight": 20.0,
+          "weighted_points": 16.0
+        },
+        {
+          "criterion": "Time-to-value",
+          "raw_score": 4.0,
+          "weight": 20.0,
+          "weighted_points": 16.0
+        }
+      ]
+    },
+    {
+      "name": "Option C",
+      "total_score": 81.0,
+      "breakdown": [
+        {
+          "criterion": "Impact",
+          "raw_score": 3.0,
+          "weight": 35.0,
+          "weighted_points": 21.0
+        },
+        {
+          "criterion": "Feasibility",
+          "raw_score": 4.0,
+          "weight": 25.0,
+          "weighted_points": 20.0
+        },
+        {
+          "criterion": "Risk",
+          "raw_score": 5.0,
+          "weight": 20.0,
+          "weighted_points": 20.0
+        },
+        {
+          "criterion": "Time-to-value",
+          "raw_score": 5.0,
+          "weight": 20.0,
+          "weighted_points": 20.0
+        }
+      ]
+    },
+    {
+      "name": "Option A",
+      "total_score": 78.0,
+      "breakdown": [
+        {
+          "criterion": "Impact",
+          "raw_score": 5.0,
+          "weight": 35.0,
+          "weighted_points": 35.0
+        },
+        {
+          "criterion": "Feasibility",
+          "raw_score": 3.0,
+          "weight": 25.0,
+          "weighted_points": 15.0
+        },
+        {
+          "criterion": "Risk",
+          "raw_score": 3.0,
+          "weight": 20.0,
+          "weighted_points": 12.0
+        },
+        {
+          "criterion": "Time-to-value",
+          "raw_score": 4.0,
+          "weight": 20.0,
+          "weighted_points": 16.0
+        }
+      ]
+    }
+  ],
+  "recommended_option": "Option B",
+  "recommended_score": 85.0
+}

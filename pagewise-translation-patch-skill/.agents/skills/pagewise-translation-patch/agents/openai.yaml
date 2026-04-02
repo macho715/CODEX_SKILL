@@ -1,0 +1,6 @@
+interface:
+  display_name: "Pagewise Translation Patch"
+  short_description: "Patch KR↔EN business/logistics documents page by page and output only changed phrases."
+  default_prompt: "Review the document end to end, patch only inaccurate or unnatural wording, and return only pagewise changed phrases."
+policy:
+  allow_implicit_invocation: false

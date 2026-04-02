@@ -1,0 +1,23 @@
+{
+  "skill": "design-upgrade-loop",
+  "surface_type": "document-surface",
+  "target": "HVDC TR integrated operations guide DOCX",
+  "round": 1,
+  "metrics": {
+    "visual_hierarchy": 4.4,
+    "readability": 4.2,
+    "spacing_alignment": 4.1,
+    "component_consistency": 4.3,
+    "information_clarity": 4.2,
+    "usability": 4.0,
+    "brand_fit": 4.5
+  },
+  "blocking_issues": [],
+  "notes": [
+    "Score is based on structure-level review after style application.",
+    "Rendered PDF preview could not be completed because Word COM export timed out in this environment."
+  ],
+  "before_artifact": "C:\\Users\\SAMSUNG\\Downloads\\skill\\tmp\\docs\\design-upgrade-loop\\hvdc_guide_source.docx",
+  "after_artifact": "C:\\Users\\SAMSUNG\\Downloads\\skill\\output\\doc\\design-upgrade\\20260401-160200\\hvdc_guide_design_upgraded.docx",
+  "verdict": "PASS"
+}

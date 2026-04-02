@@ -1,0 +1,38 @@
+{
+  "scale_max": 5,
+  "criteria": [
+    {"name": "Impact", "weight": 35},
+    {"name": "Feasibility", "weight": 25},
+    {"name": "Risk", "weight": 20},
+    {"name": "Time-to-value", "weight": 20}
+  ],
+  "options": [
+    {
+      "name": "Option A",
+      "scores": {
+        "Impact": 5,
+        "Feasibility": 3,
+        "Risk": 3,
+        "Time-to-value": 4
+      }
+    },
+    {
+      "name": "Option B",
+      "scores": {
+        "Impact": 4,
+        "Feasibility": 5,
+        "Risk": 4,
+        "Time-to-value": 4
+      }
+    },
+    {
+      "name": "Option C",
+      "scores": {
+        "Impact": 3,
+        "Feasibility": 4,
+        "Risk": 5,
+        "Time-to-value": 5
+      }
+    }
+  ]
+}

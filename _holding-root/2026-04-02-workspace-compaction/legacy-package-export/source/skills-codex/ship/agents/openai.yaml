@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Ship"
+  short_description: "Run release readiness checks before merge or deploy"
+  default_prompt: "Use this skill only when review and QA evidence already exist. Validate tests, coverage, commit hygiene, and branch strategy, then report blockers before any merge or push. Prefer mstack-pipeline for one-shot end-to-end workflows."

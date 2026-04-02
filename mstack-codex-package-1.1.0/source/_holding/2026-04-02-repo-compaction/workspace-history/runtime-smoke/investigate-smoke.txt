@@ -1,0 +1,22 @@
+Hypotheses:
+- The CSV importer assumes at least one data row and crashes when parsing an empty buffer.
+- Header detection may fail on zero-byte input, leading to an index or null dereference when the code tries to access the first record.
+- The import path may build a reader or schema from parsed rows without checking for an empty iterator, causing an exception during initialization.
+- A downstream validation step may treat “no rows” as an error but not handle it gracefully, turning a normal empty-file case into an unhandled crash.
+
+Root Cause:
+- The importer is missing an explicit empty-file guard before parsing or record access.
+- The crash is most likely caused by code that dereferences the first parsed row, header, or field without verifying that any CSV content exists.
+- In short: empty input is not treated as a valid edge case, so the import pipeline hits an unchecked access path instead of returning a clean validation error or no-op result.
+
+Fix Recommendation:
+- Add a pre-parse check for empty or whitespace-only CSV input and return a controlled error like “CSV file is empty.”
+- If empty files should be allowed, short-circuit the import and return an empty result instead of entering row-processing logic.
+- Add defensive checks around header parsing and first-row access so all parsing stages handle zero records safely.
+- Preserve the existing failure behavior for malformed CSV, but separate that from the empty-file case.
+
+Regression Test:
+- Add a test that imports a zero-byte CSV file and asserts the importer does not crash.
+- Verify the expected outcome explicitly: either a clean error message for empty input or a successful empty import result, depending on product behavior.
+- Add a second test for a file containing only a newline or whitespace to cover the near-empty case.
+- Ensure the test asserts no uncaught exception, no stack trace, and no partial state is written.

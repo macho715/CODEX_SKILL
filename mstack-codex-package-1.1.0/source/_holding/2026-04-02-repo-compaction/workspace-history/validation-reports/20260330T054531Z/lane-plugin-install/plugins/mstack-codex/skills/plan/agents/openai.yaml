@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Plan"
+  short_description: "Write pre-implementation plans and approval docs"
+  default_prompt: "Use this skill only before coding begins. Produce a two-phase plan with approval points, architecture, file changes, dependencies, and test strategy. Prefer mstack-pipeline only when the user wants implementation through release as well."

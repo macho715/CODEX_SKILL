@@ -1,0 +1,13 @@
+{
+  "name": "minimal",
+  "lang": "unknown",
+  "test_cmd": "",
+  "lint_cmd": "",
+  "type_cmd": "",
+  "rules": [],
+  "permissions": {},
+  "hooks_level": "basic",
+  "custom_skills": [],
+  "domain_terms": {},
+  "fanr_rules": []
+}

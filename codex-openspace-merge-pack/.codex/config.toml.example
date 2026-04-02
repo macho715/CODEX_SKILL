@@ -1,0 +1,14 @@
+# Project-scoped Codex MCP config
+# Save as: .codex/config.toml
+
+[mcp_servers.openspace]
+command = "openspace-mcp"
+tool_timeout_sec = 600
+startup_timeout_sec = 20
+enabled = true
+
+[mcp_servers.openspace.env]
+OPENSPACE_HOST_SKILL_DIRS = "/ABS/PATH/TO/REPO/.agents/skills"
+OPENSPACE_WORKSPACE = "/ABS/PATH/TO/OpenSpace"
+# Optional: enable cloud skill search/upload
+# OPENSPACE_API_KEY = "sk-..."

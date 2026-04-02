@@ -1,0 +1,3 @@
+Stage Order: careful -> dispatch -> plan -> implement -> review -> qa -> ship -> retro
+Stop Conditions: Stop if the repository or runtime state cannot be inspected, if implementation details are ambiguous, or if any stage fails validation and needs user clarification.
+Final Output: A completed end-to-end delivery plan for CSV import in the todo app, from scoped design through implementation, review, QA, release readiness, and retrospective notes.

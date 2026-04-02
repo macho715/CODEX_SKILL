@@ -1,0 +1,7 @@
+**Phase 1**
+- Define the CSV import flow, field mapping, and validation rules for todo records.
+- Design the UI entry point and error/reporting behavior for successful and failed imports.
+
+**Phase 2**
+- Implement CSV parsing, row-to-todo conversion, and persistence into the existing todo store.
+- Add import tests covering valid files, malformed rows, empty files, and duplicate handling.

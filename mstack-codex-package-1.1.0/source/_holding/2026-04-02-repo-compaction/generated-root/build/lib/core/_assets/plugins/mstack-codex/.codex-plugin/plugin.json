@@ -1,0 +1,42 @@
+{
+  "name": "mstack-codex",
+  "version": "1.1.0",
+  "description": "Plugin-first Codex distribution for the MStack multi-agent skill set.",
+  "author": {
+    "name": "TODO",
+    "email": "TODO",
+    "url": "TODO"
+  },
+  "homepage": "TODO",
+  "repository": "TODO",
+  "license": "TODO",
+  "keywords": [
+    "mstack",
+    "codex",
+    "skills",
+    "multi-agent",
+    "productivity"
+  ],
+  "skills": "./skills",
+  "interface": {
+    "displayName": "MStack Codex",
+    "shortDescription": "Plugin-first MStack skill bundle for Codex",
+    "longDescription": "Installs 10 public MStack Codex skills plus embedded coordinator internals as a local plugin while preserving direct skill installs.",
+    "developerName": "TODO",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "TODO",
+    "privacyPolicyURL": "TODO",
+    "termsOfServiceURL": "TODO",
+    "defaultPrompt": [
+      "Install the MStack skill bundle for Codex",
+      "Set up MStack as a plugin-first Codex package",
+      "Refresh local MStack skills and plugin assets"
+    ],
+    "brandColor": "#2563EB",
+    "screenshots": []
+  }
+}

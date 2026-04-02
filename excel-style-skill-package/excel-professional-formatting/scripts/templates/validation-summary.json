@@ -1,0 +1,7 @@
+{
+  "timestamp": "{{timestamp}}",
+  "rootPath": "{{root}}",
+  "outputPath": "{{output}}",
+  "overall": "{{overall}}",
+  "lanes": []
+}

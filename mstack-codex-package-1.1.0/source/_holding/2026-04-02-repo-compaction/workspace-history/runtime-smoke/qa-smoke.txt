@@ -1,0 +1,3 @@
+Mode: QA assessment only, no repository inspection or command execution
+Results: High regression risk because CSV parsing changes can break quoting, delimiters, escapes, empty fields, embedded newlines, and malformed input handling; no tests means the change is not release-ready
+Regression Tests: Add unit tests for basic rows, quoted fields, escaped quotes, commas inside fields, empty fields, trailing delimiters, CRLF/LF handling, multiline fields, malformed CSV rejection, and a small end-to-end parse fixture for representative real-world files

@@ -1,0 +1,3 @@
+source_term,target_term,source_lang,target_lang,status,do_not_translate,definition,context,example,owner,last_updated
+bill of lading,B/L,en,ko,approved,no,Shipping document for carriage of goods,marine logistics,Check the bill of lading before cargo release,team,YYYY-MM-DD
+Incoterms,Incoterms,en,ko,approved,yes,International commercial terms,trade contracts,Use the agreed Incoterms in the sales contract,team,YYYY-MM-DD

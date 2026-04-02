@@ -1,0 +1,7 @@
+interface:
+  display_name: "Excel Professional Formatting"
+  short_description: "Sidecar-first Excel formatting with promotion and validation gates"
+  default_prompt: "Use $excel-professional-formatting to run a sidecar-first Excel formatting pass, preserve workbook logic, validate contract diffs, and promote only after the formatting gates pass."
+
+policy:
+  allow_implicit_invocation: true

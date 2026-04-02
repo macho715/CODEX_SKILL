@@ -1,0 +1,20 @@
+{
+  "name": "local-marketplace",
+  "interface": {
+    "displayName": "Local Plugins"
+  },
+  "plugins": [
+    {
+      "name": "excel-vba",
+      "source": {
+        "source": "local",
+        "path": "./plugins/excel-vba"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

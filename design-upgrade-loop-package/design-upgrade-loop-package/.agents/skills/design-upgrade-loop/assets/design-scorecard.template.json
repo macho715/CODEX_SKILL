@@ -1,0 +1,20 @@
+{
+  "skill": "design-upgrade-loop",
+  "surface_type": "webpage",
+  "target": "describe the page or document",
+  "round": 1,
+  "metrics": {
+    "visual_hierarchy": 0.0,
+    "readability": 0.0,
+    "spacing_alignment": 0.0,
+    "component_consistency": 0.0,
+    "information_clarity": 0.0,
+    "usability": 0.0,
+    "brand_fit": 0.0
+  },
+  "blocking_issues": [],
+  "notes": [],
+  "before_artifact": "",
+  "after_artifact": "",
+  "verdict": "FAIL"
+}

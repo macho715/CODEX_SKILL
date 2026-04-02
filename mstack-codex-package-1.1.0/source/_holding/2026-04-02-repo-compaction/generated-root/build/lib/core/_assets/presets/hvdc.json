@@ -1,0 +1,35 @@
+{
+  "name": "hvdc",
+  "lang": "python",
+  "test_cmd": "pytest tests/ -x --tb=short",
+  "lint_cmd": "ruff check .",
+  "type_cmd": "mypy --strict .",
+  "rules": [
+    "Always use type hints (PEP 484)",
+    "Follow PEP 8",
+    "NDA/PII masking: mask phone numbers and emails (keep person names)",
+    "Use pdfplumber for PDF extraction",
+    "Cost tracking: log all Agent Teams sessions to JSONL"
+  ],
+  "permissions": {
+    "Bash": true,
+    "Edit": true,
+    "Write": true,
+    "Read": true
+  },
+  "hooks_level": "extended",
+  "custom_skills": [],
+  "domain_terms": {
+    "FANR": "Federal Authority for Nuclear Regulation (UAE)",
+    "MOIAT": "Ministry of Industry and Advanced Technology (UAE)",
+    "BL": "Bill of Lading",
+    "TEU": "Twenty-foot Equivalent Unit",
+    "eDAS": "Electronic Delivery Advice System",
+    "DEM/DET": "Demurrage/Detention"
+  },
+  "fanr_rules": [
+    "HVDC 케이블 수입 시 FANR 방사선 검사 필수",
+    "MOIAT 적합성 인증서 첨부 필수",
+    "HS Code 8544.60 (전력 케이블) 확인"
+  ]
+}

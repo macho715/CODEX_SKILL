@@ -1,0 +1,833 @@
+{
+  "generated_at": "2026-03-30T04:38:56+00:00",
+  "project_root": "C:\\Users\\SAMSUNG\\Downloads\\skill",
+  "project_name": "mstack",
+  "docs_root_default": "C:\\Users\\SAMSUNG\\Downloads\\skill\\docs\\project-docs",
+  "inspected_files": [
+    "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
+    "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+    "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py",
+    "excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py",
+    "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+    "excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py",
+    "excel_vba/README.md",
+    "excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1",
+    "mstack-codex-package-1.1.0/source/README.md",
+    "mstack-codex-package-1.1.0/source/pyproject.toml",
+    "mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py",
+    "mstack-codex-package-1.1.0/source/tests/debug/README.md",
+    "pdo-skill/scripts/doc_orchestrator_lib.py",
+    "pdo-skill/scripts/patch_docs.py",
+    "pdo-skill/scripts/project_snapshot.py",
+    "pdo-skill/scripts/scaffold_docs.py",
+    "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py",
+    "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py",
+    "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/project_snapshot.py",
+    "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py",
+    "source/README.md",
+    "source/docs/ARCHITECTURE.md",
+    "source/docs/CHANGELOG.md",
+    "source/docs/LAYOUT.md",
+    "source/docs/README.md",
+    "source/docs/getting-started.md",
+    "source/docs/user-guide.md",
+    "source/pyproject.toml",
+    "source/scripts/codex_runtime_smoke.py",
+    "source/tests/debug/README.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/README.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/ARCHITECTURE.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/CHANGELOG.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/GUIDE.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/LAYOUT.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/PLAN.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/README.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/docs/usage.md",
+    "tmp-doc-orchestrator-parallel-test-20260330/package.json",
+    "tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1",
+    "tmp-doc-orchestrator-smoke-20260329100642/README.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/ARCHITECTURE.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/CHANGELOG.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/GUIDE.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/LAYOUT.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/PLAN.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/README.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/docs/usage.md",
+    "tmp-doc-orchestrator-smoke-20260329100642/package.json",
+    "tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1"
+  ],
+  "manifests": [
+    {
+      "kind": "pyproject.toml",
+      "name": "mstack",
+      "version": "1.1.0",
+      "summary": "Python project manifest with 1 script entrypoint(s)",
+      "commands": [
+        "python -m mstack"
+      ],
+      "script_names": [
+        "mstack"
+      ],
+      "path": "mstack-codex-package-1.1.0/source/pyproject.toml"
+    },
+    {
+      "kind": "pyproject.toml",
+      "name": "mstack",
+      "version": "1.1.0",
+      "summary": "Python project manifest with 1 script entrypoint(s)",
+      "commands": [
+        "python -m mstack"
+      ],
+      "script_names": [
+        "mstack"
+      ],
+      "path": "source/pyproject.toml"
+    },
+    {
+      "kind": "package.json",
+      "name": "smoke-doc-app",
+      "version": "0.1.0",
+      "summary": "npm package with 2 script(s)",
+      "commands": [
+        "npm run docs",
+        "npm run start"
+      ],
+      "script_names": [
+        "docs",
+        "start"
+      ],
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/package.json"
+    },
+    {
+      "kind": "package.json",
+      "name": "smoke-doc-app",
+      "version": "0.1.0",
+      "summary": "npm package with 2 script(s)",
+      "commands": [
+        "npm run docs",
+        "npm run start"
+      ],
+      "script_names": [
+        "docs",
+        "start"
+      ],
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/package.json"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "kind": "py",
+      "summary": "\"\"\"; OpenAI YAML Generator - Creates agents/openai.yaml for a skill folder.",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py"
+      ]
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "kind": "py",
+      "summary": "\"\"\"; Skill Initializer - Creates a new skill from template",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py"
+      ]
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py",
+      "kind": "py",
+      "summary": "\"\"\"; Quick validation script for skills - minimal version",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py"
+      ]
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "kind": "py",
+      "summary": "\"\"\"; OpenAI YAML Generator - Creates agents/openai.yaml for a skill folder.",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py"
+      ]
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "kind": "py",
+      "summary": "\"\"\"; Skill Initializer - Creates a new skill from template",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/init_skill.py"
+      ]
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py",
+      "kind": "py",
+      "summary": "\"\"\"; Quick validation script for skills - minimal version",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py"
+      ]
+    },
+    {
+      "path": "excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1",
+      "kind": "ps1",
+      "summary": "[CmdletBinding()]; param(",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py",
+      "kind": "py",
+      "summary": "\"\"\"Runtime smoke test for Codex skills.; This script temporarily installs selected skills from ``skills-codex`` into the",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py"
+      ]
+    },
+    {
+      "path": "pdo-skill/scripts/doc_orchestrator_lib.py",
+      "kind": "py",
+      "summary": "\"\"\"Shared helpers for the project-doc-orchestrator skill.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/doc_orchestrator_lib.py"
+      ]
+    },
+    {
+      "path": "pdo-skill/scripts/patch_docs.py",
+      "kind": "py",
+      "summary": "\"\"\"Refresh the managed documentation bundle for a project.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/patch_docs.py"
+      ]
+    },
+    {
+      "path": "pdo-skill/scripts/project_snapshot.py",
+      "kind": "py",
+      "summary": "\"\"\"Inspect a project and emit a normalized snapshot for document generation.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/project_snapshot.py"
+      ]
+    },
+    {
+      "path": "pdo-skill/scripts/scaffold_docs.py",
+      "kind": "py",
+      "summary": "\"\"\"Create the managed documentation bundle for a project.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/scaffold_docs.py"
+      ]
+    },
+    {
+      "path": "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py",
+      "kind": "py",
+      "summary": "\"\"\"Shared helpers for the project-doc-orchestrator skill.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py"
+      ]
+    },
+    {
+      "path": "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py",
+      "kind": "py",
+      "summary": "\"\"\"Refresh the managed documentation bundle for a project.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py"
+      ]
+    },
+    {
+      "path": "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/project_snapshot.py",
+      "kind": "py",
+      "summary": "\"\"\"Inspect a project and emit a normalized snapshot for document generation.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/project_snapshot.py"
+      ]
+    },
+    {
+      "path": "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py",
+      "kind": "py",
+      "summary": "\"\"\"Create the managed documentation bundle for a project.\"\"\"; from __future__ import annotations",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py"
+      ]
+    },
+    {
+      "path": "source/scripts/codex_runtime_smoke.py",
+      "kind": "py",
+      "summary": "\"\"\"Runtime smoke test for Codex skills.; This script temporarily installs selected skills from ``skills-codex`` into the",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/source/scripts/codex_runtime_smoke.py"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1",
+      "kind": "ps1",
+      "summary": "Write-Output \"building smoke docs\"",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1",
+      "kind": "ps1",
+      "summary": "Write-Output \"building smoke docs\"",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1"
+      ]
+    }
+  ],
+  "docs": [
+    {
+      "path": "excel_vba/README.md",
+      "title": "excel-vba Skill Repo",
+      "summary": "Repo layout",
+      "headings": [
+        "excel-vba Skill Repo",
+        "Repo layout",
+        "Install from GitHub",
+        "Install from a local checkout"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/README.md",
+      "title": "ccat — Claude Code Agent Teams CLI",
+      "summary": "Codex wheel install",
+      "headings": [
+        "ccat — Claude Code Agent Teams CLI",
+        "Codex wheel install",
+        "빠른 시작",
+        "프로젝트 폴더에서 실행 (언어 자동 감지)",
+        "언어 직접 지정"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/tests/debug/README.md",
+      "title": "tests/debug/",
+      "summary": "실험용·디버그용 테스트 디렉토리.",
+      "headings": [
+        "tests/debug/"
+      ]
+    },
+    {
+      "path": "source/README.md",
+      "title": "ccat — Claude Code Agent Teams CLI",
+      "summary": "Codex wheel install",
+      "headings": [
+        "ccat — Claude Code Agent Teams CLI",
+        "Codex wheel install",
+        "빠른 시작",
+        "프로젝트 폴더에서 실행 (언어 자동 감지)",
+        "언어 직접 지정"
+      ]
+    },
+    {
+      "path": "source/docs/ARCHITECTURE.md",
+      "title": "System Architecture — mstack (ccat)",
+      "summary": "High-Level Overview",
+      "headings": [
+        "System Architecture — mstack (ccat)",
+        "High-Level Overview",
+        "Module Dependency Graph",
+        "Core Module Details",
+        "types.py — 공통 데이터 타입"
+      ]
+    },
+    {
+      "path": "source/docs/CHANGELOG.md",
+      "title": "Changelog — mstack (ccat)",
+      "summary": "[1.1.0] — 2026-03-22",
+      "headings": [
+        "Changelog — mstack (ccat)",
+        "[1.1.0] — 2026-03-22",
+        "Overview",
+        "v1.4 — `test(v1.4): core/ 100% coverage — all 13 modules at 0 miss`",
+        "Added"
+      ]
+    },
+    {
+      "path": "source/docs/getting-started.md",
+      "title": "mstack 시작하기 (Getting Started)",
+      "summary": "mstack이 뭔가요?",
+      "headings": [
+        "mstack 시작하기 (Getting Started)",
+        "mstack이 뭔가요?",
+        "설치",
+        "요구사항 확인",
+        "Python 3.12.4  ← 3.11 이상이면 OK"
+      ]
+    },
+    {
+      "path": "source/docs/LAYOUT.md",
+      "title": "Project Layout — mstack (ccat)",
+      "summary": "Directory Tree",
+      "headings": [
+        "Project Layout — mstack (ccat)",
+        "Directory Tree",
+        "File Count Summary",
+        "Key Configuration Files",
+        "Naming Conventions"
+      ]
+    },
+    {
+      "path": "source/docs/README.md",
+      "title": "mstack (ccat) — Claude Code Agent Teams CLI",
+      "summary": "Overview",
+      "headings": [
+        "mstack (ccat) — Claude Code Agent Teams CLI",
+        "Overview",
+        "Features",
+        "Quick Start",
+        "1. 프로젝트 초기화"
+      ]
+    },
+    {
+      "path": "source/docs/user-guide.md",
+      "title": "mstack 사용자 가이드 (v1.4)",
+      "summary": "목차",
+      "headings": [
+        "mstack 사용자 가이드 (v1.4)",
+        "목차",
+        "1. mstack이 뭔가요?",
+        "한 줄 요약",
+        "왜 필요한가요?"
+      ]
+    },
+    {
+      "path": "source/tests/debug/README.md",
+      "title": "tests/debug/",
+      "summary": "실험용·디버그용 테스트 디렉토리.",
+      "headings": [
+        "tests/debug/"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/README.md",
+      "title": "Smoke Doc App",
+      "summary": "Existing Notes",
+      "headings": [
+        "Smoke Doc App",
+        "Existing Notes"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/usage.md",
+      "title": "Notes",
+      "summary": "Usage",
+      "headings": [
+        "Notes",
+        "Usage"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/ARCHITECTURE.md",
+      "title": "Observed Architecture For smoke-doc-app",
+      "summary": "Architecture Rule",
+      "headings": [
+        "Observed Architecture For smoke-doc-app",
+        "Architecture Rule",
+        "Architecture Diagram",
+        "Observed Architecture Notes",
+        "Manifest Surface"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/CHANGELOG.md",
+      "title": "Observed Changelog For smoke-doc-app",
+      "summary": "Changelog Rule",
+      "headings": [
+        "Observed Changelog For smoke-doc-app",
+        "Changelog Rule",
+        "Activity Diagram",
+        "Recent Commits",
+        "Current Working Tree Signals"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/GUIDE.md",
+      "title": "Working Guide For smoke-doc-app",
+      "summary": "Guide Rule",
+      "headings": [
+        "Working Guide For smoke-doc-app",
+        "Guide Rule",
+        "Guide Diagram",
+        "Commands You Can Run",
+        "Script Entry Points"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/LAYOUT.md",
+      "title": "Repository Layout For smoke-doc-app",
+      "summary": "Layout Rule",
+      "headings": [
+        "Repository Layout For smoke-doc-app",
+        "Layout Rule",
+        "Layout Diagram",
+        "Tree Snapshot",
+        "Top-Level Entry Counts"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/PLAN.md",
+      "title": "Current Plan For smoke-doc-app",
+      "summary": "Planning Rule",
+      "headings": [
+        "Current Plan For smoke-doc-app",
+        "Planning Rule",
+        "Plan Diagram",
+        "Evidence-Backed Next Actions",
+        "TODO And FIXME Evidence"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/README.md",
+      "title": "smoke-doc-app",
+      "summary": "Purpose",
+      "headings": [
+        "smoke-doc-app",
+        "Purpose",
+        "Evidence Rule",
+        "Overview Diagram",
+        "Observations"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/README.md",
+      "title": "Smoke Doc App",
+      "summary": "Existing Notes",
+      "headings": [
+        "Smoke Doc App",
+        "Existing Notes"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/usage.md",
+      "title": "Notes",
+      "summary": "Usage",
+      "headings": [
+        "Notes",
+        "Usage"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/ARCHITECTURE.md",
+      "title": "Observed Architecture For smoke-doc-app",
+      "summary": "Architecture Rule",
+      "headings": [
+        "Observed Architecture For smoke-doc-app",
+        "Architecture Rule",
+        "Architecture Diagram",
+        "Observed Architecture Notes",
+        "Manifest Surface"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/CHANGELOG.md",
+      "title": "Observed Changelog For smoke-doc-app",
+      "summary": "Changelog Rule",
+      "headings": [
+        "Observed Changelog For smoke-doc-app",
+        "Changelog Rule",
+        "Activity Diagram",
+        "Recent Commits",
+        "Current Working Tree Signals"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/GUIDE.md",
+      "title": "Working Guide For smoke-doc-app",
+      "summary": "Guide Rule",
+      "headings": [
+        "Working Guide For smoke-doc-app",
+        "Guide Rule",
+        "Guide Diagram",
+        "Commands You Can Run",
+        "Script Entry Points"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/LAYOUT.md",
+      "title": "Repository Layout For smoke-doc-app",
+      "summary": "Layout Rule",
+      "headings": [
+        "Repository Layout For smoke-doc-app",
+        "Layout Rule",
+        "Layout Diagram",
+        "Tree Snapshot",
+        "Top-Level Entry Counts"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/PLAN.md",
+      "title": "Current Plan For smoke-doc-app",
+      "summary": "Planning Rule",
+      "headings": [
+        "Current Plan For smoke-doc-app",
+        "Planning Rule",
+        "Plan Diagram",
+        "Evidence-Backed Next Actions",
+        "TODO And FIXME Evidence"
+      ]
+    },
+    {
+      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/README.md",
+      "title": "smoke-doc-app",
+      "summary": "Purpose",
+      "headings": [
+        "smoke-doc-app",
+        "Purpose",
+        "Evidence Rule",
+        "Overview Diagram",
+        "Observations"
+      ]
+    }
+  ],
+  "source_summary": {
+    "total_files": 385,
+    "counts_by_extension": {
+      ".py": 142,
+      ".md": 137,
+      ".yaml": 38,
+      ".json": 19,
+      ".disabled": 18,
+      ".ps1": 9,
+      ".txt": 6,
+      ".svg": 4,
+      ".png": 4,
+      ".docx": 2,
+      "<no_ext>": 2,
+      ".toml": 2,
+      ".whl": 2
+    },
+    "top_level_entries": {
+      "source": 134,
+      "mstack-codex-package-1.1.0": 128,
+      "excel-style-skill-package": 53,
+      "excel_vba": 18,
+      "tmp-doc-orchestrator-parallel-test-20260330": 13,
+      "tmp-doc-orchestrator-smoke-20260329100642": 12,
+      "plugins": 11,
+      "pdo-skill": 10,
+      "Codex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트.docx": 1,
+      "codex_skill_plugin_mutiagent_guidebook.md": 1,
+      "PACKAGE_CONTENTS.txt": 1,
+      "~$dex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트.docx": 1
+    }
+  },
+  "layout_tree": [
+    "skill/",
+    "|-- .agents/",
+    "|   \\-- plugins/",
+    "|       \\-- marketplace.json",
+    "|-- excel-style-skill-package/",
+    "|   |-- .agents/",
+    "|   |   \\-- skills/",
+    "|   |-- .system/",
+    "|   |   \\-- skill-creator/",
+    "|   |-- excel-professional-formatting/",
+    "|   |   |-- agents/",
+    "|   |   |-- references/",
+    "|   |   |-- install_excel_professional_formatting_skill.ps1",
+    "|   |   \\-- SKILL.md.disabled",
+    "|   |-- excel-vba/",
+    "|   |   |-- agents/",
+    "|   |   |-- references/",
+    "|   |   |-- install_excel_vba_skill.ps1",
+    "|   |   \\-- SKILL.md.disabled",
+    "|   |-- spreadsheet/",
+    "|   |   |-- agents/",
+    "|   |   |-- assets/",
+    "|   |   |-- references/",
+    "|   |   |-- LICENSE.txt",
+    "|   |   \\-- SKILL.md.disabled",
+    "|   \\-- install_excel_style_skills.ps1",
+    "|-- excel_vba/",
+    "|   |-- excel-vba/",
+    "|   |   |-- agents/",
+    "|   |   |-- references/",
+    "|   |   |-- scripts/",
+    "|   |   \\-- SKILL.md.disabled",
+    "|   |-- .gitignore",
+    "|   |-- install_excel_vba_skill.ps1",
+    "|   \\-- README.md",
+    "|-- mstack-codex-package-1.1.0/",
+    "|   |-- source/",
+    "|   |   |-- core/",
+    "|   |   |-- presets/",
+    "|   |   |-- scripts/",
+    "|   |   |-- skills/",
+    "|   |   |-- skills-codex/",
+    "|   |   |-- tests/",
+    "|   |   |-- .gitignore",
+    "|   |   |-- AGENTS.md",
+    "|   |   |-- cost.py",
+    "|   |   |-- INSTALL_CODEX.md",
+    "|   |   |-- mstack.py",
+    "|   |   |-- pyproject.toml",
+    "|   |   \\-- README.md",
+    "|   |-- wheel/",
+    "|   |   \\-- mstack-1.1.0-py3-none-any.whl",
+    "|   \\-- PACKAGE_CONTENTS.txt",
+    "|-- pdo-skill/",
+    "|   |-- agents/",
+    "|   |   \\-- openai.yaml",
+    "|   |-- references/",
+    "|   |   |-- evidence-rule.md",
+    "|   |   |-- file-contract.md",
+    "|   |   |-- mermaid-guidelines.md",
+    "|   |   \\-- workflow.md",
+    "|   |-- scripts/",
+    "|   |   |-- doc_orchestrator_lib.py",
+    "|   |   |-- patch_docs.py",
+    "|   |   |-- project_snapshot.py",
+    "|   |   \\-- scaffold_docs.py",
+    "|   \\-- SKILL.md",
+    "|-- plugins/",
+    "|   \\-- project-doc-orchestrator/",
+    "|       |-- .codex-plugin/",
+    "|       \\-- skills/",
+    "|-- source/",
+    "|   |-- core/",
+    "|   |   |-- _assets/",
+    "|   |   |-- __init__.py",
+    "|   |   |-- assets.py",
+    "|   |   |-- claude_md.py",
+    "|   |   |-- config.py",
+    "|   |   |-- cost.py",
+    "|   |   |-- dashboard.py",
+    "|   |   |-- doctor.py"
+  ],
+  "git": {
+    "is_git_repo": false,
+    "branch": null,
+    "recent_commits": [],
+    "changed_files": []
+  },
+  "todos": [
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 28,
+      "text": "description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that t"
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 35,
+      "text": "[TODO: 1-2 sentences explaining what this skill enables]"
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 39,
+      "text": "[TODO: Choose the structure that best fits this skill's purpose. Common patterns:"
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 65,
+      "text": "## [TODO: Replace with the first main section based on chosen structure]"
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 67,
+      "text": "[TODO: Add content here. See examples in existing skills:"
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 127,
+      "text": "# TODO: Add actual script logic here"
+    },
+    {
+      "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "line": 319,
+      "text": "print(\"1. Edit SKILL.md to complete the TODO items and update the description\")"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 28,
+      "text": "description: [TODO: Complete and informative explanation of what the skill does and when to use it. Include WHEN to use this skill - specific scenarios, file types, or tasks that t"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 35,
+      "text": "[TODO: 1-2 sentences explaining what this skill enables]"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 39,
+      "text": "[TODO: Choose the structure that best fits this skill's purpose. Common patterns:"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 65,
+      "text": "## [TODO: Replace with the first main section based on chosen structure]"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 67,
+      "text": "[TODO: Add content here. See examples in existing skills:"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 127,
+      "text": "# TODO: Add actual script logic here"
+    },
+    {
+      "path": "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "line": 319,
+      "text": "print(\"1. Edit SKILL.md to complete the TODO items and update the description\")"
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/pipeline_adapter.py",
+      "line": 25,
+      "text": "\"bugfix\": (\"bug\", \"bugfix\", \"fix crash\", \"failure\", \"error\", \"crash\", \"regression\", \"버그\", \"장애\", \"에러\"),"
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/pipeline_recipes.py",
+      "line": 21,
+      "text": "\"fix bug\","
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/pipeline_recipes.py",
+      "line": 25,
+      "text": "\"parser bug\","
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/_assets/skills/investigate/SKILL.md",
+      "line": 6,
+      "text": "이 스킬은 investigate, 버그, bug, debug, 조사, 디버깅, error, crash, 장애, incident,"
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/_assets/skills/investigate/SKILL.md",
+      "line": 82,
+      "text": "Bug: [한줄 설명]"
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/_assets/skills-codex/investigate/SKILL.md",
+      "line": 5,
+      "text": "bug, form hypotheses, gather evidence, and identify the root cause before"
+    }
+  ],
+  "commands": {
+    "from_manifests": [
+      "npm run docs",
+      "npm run start",
+      "python -m mstack"
+    ],
+    "from_scripts": [
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1",
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1",
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1",
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/doc_orchestrator_lib.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/patch_docs.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/project_snapshot.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/scaffold_docs.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/project_snapshot.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/source/scripts/codex_runtime_smoke.py"
+    ]
+  },
+  "observations": [
+    "Detected 4 manifest/config file(s).",
+    "Inspected 19 runnable script file(s).",
+    "Inspected 27 existing documentation file(s).",
+    "Git metadata was not available.",
+    "Found 20 TODO/FIXME-style marker(s) in inspected text files."
+  ]
+}

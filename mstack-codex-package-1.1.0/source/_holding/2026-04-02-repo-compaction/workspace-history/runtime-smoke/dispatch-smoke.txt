@@ -1,0 +1,4 @@
+Mode: `AGENT_TEAMS` with 2 parallel workers, one owning UI files and one owning API files, plus a lead for integration.
+Risks: Cross-module contract drift, shared types/schema mismatch, UI/API merge conflicts, and incomplete validation if ownership boundaries are not explicit.
+Ownership: UI worker owns the 3 UI files; API worker owns the 3 API files; lead owns any shared contract file and final integration review.
+Validation: Per-worker unit tests on owned areas, then one integration test pass covering the UI/API boundary and any shared contract assertions.

@@ -1,0 +1,10 @@
+{
+  "mode": "update",
+  "target_skill": "skill-update",
+  "repo_root": ".",
+  "intent": "Update or create a Codex skill using parallel-first execution, automatic reuse detection, and latest official documentation.",
+  "internet_allowed": true,
+  "allow_destructive": false,
+  "emit_optional_agents": true,
+  "notes": "Use official OpenAI docs only for behavior-changing facts."
+}

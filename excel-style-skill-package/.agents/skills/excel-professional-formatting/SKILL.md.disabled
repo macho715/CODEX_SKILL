@@ -1,0 +1,80 @@
+---
+name: excel-professional-formatting
+description: Make Excel worksheets, tables, trackers, dashboards, and report sheets look professional without changing workbook logic. Use when the task mentions style, formatting, font size, alignment, number or date formats, borders, fills, table style, readability, accessibility, dashboard polish, or print-layout cleanup. Use after `excel-vba` when macros, formulas, named ranges, or controls must stay safe.
+---
+
+# Excel Professional Formatting
+
+Own the visual layer only.
+Preserve workbook behavior over appearance.
+
+## Workflow
+
+1. Read the workbook directly or consume the handoff produced by `excel-vba`.
+2. Classify each sheet before editing:
+   - Raw Data
+   - Working Calc
+   - Input Form
+   - Operational Tracker
+   - Executive Report
+   - Dashboard
+   - Print Form or Submission Sheet
+3. Apply the formatting stack in this order:
+   - workbook theme
+   - cell style hierarchy
+   - table style
+   - focused manual cleanup
+   - conditional formatting only for meaningful signals
+4. Validate against [references/validation-checklist.md](references/validation-checklist.md) before finalizing.
+
+## Safety Boundary
+
+- Do not change workbook logic, formulas, named ranges, table names, controls, or macro bindings.
+- Do not restructure raw-data regions to achieve a visual effect.
+- Hand the task back to `excel-vba` if styling requires structure-sensitive edits.
+- Preserve workbook behavior over appearance in every conflict.
+
+## Required Formatting Rules
+
+- Use a theme-first approach. Do not start with random per-cell colors.
+- Use a clear cell style hierarchy for title, section header, column header, body, note, warning, and total states.
+- Prefer table-first formatting for structured data when the workbook contract says conversion is safe.
+- Keep Raw Data sheets conservative:
+  - exactly one real header row
+  - no merged cells inside data regions
+  - no blank rows or columns inside the structured range
+  - preserve filters, table safety, and scan speed
+- Keep reports and dashboards readable:
+  - maintain contrast and hierarchy
+  - use restrained borders and fills
+  - keep tables readable at normal zoom
+  - reduce visual noise instead of adding decoration
+  - if the user forbids wrapping, preserve report width over blanket AutoFit
+  - when no-wrap is required, AutoFit label, numeric, and short-text columns only; stop and ask before materially widening long narrative columns
+- Keep print output usable:
+  - review margins, orientation, and scaling
+  - repeat top rows when a multi-page print sheet needs persistent context
+- Keep accessibility visible:
+  - maintain sufficient contrast
+  - avoid color-only meaning
+  - keep simple table structures
+  - give presentation-heavy sheets a clear starting point
+- Avoid `Merge & Center` inside data and report structures. Prefer `Center Across Selection` or layout blocks outside the data region.
+- Do not add new merged cells inside report-table bodies or data tables. Existing presentation-only title blocks may remain, but do not widen body regions by merging narrative columns.
+- If automation hooks are allowed, keep to approved Excel-safe hooks:
+  - `RangeFormat.autofitColumns()`
+  - `RangeFormat.autofitRows()`
+  - `Table.setPredefinedTableStyle()`
+  - `Table.setShowBandedRows()`
+  - `Table.setShowFilterButton()`
+
+## Outputs
+
+Return:
+
+1. sheet classification summary
+2. formatting plan by sheet
+3. changes applied or proposed
+4. risks avoided
+5. print and accessibility notes
+6. validation results

@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-03-30T05:43:20.048466+00:00",
+  "repo_root": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+  "wheel_path": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\wheelhouse\\mstack-1.1.0-py3-none-any.whl",
+  "overall_status": "failed",
+  "automatic_patch_action": "manual-follow-up-required",
+  "lanes": [
+    {
+      "name": "lane-direct-install",
+      "status": "passed",
+      "duration_sec": 198.67,
+      "commands": [
+        "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-direct-install\\venv\\Scripts\\python.exe -m pip install C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\wheelhouse\\mstack-1.1.0-py3-none-any.whl",
+        "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-direct-install\\venv\\Scripts\\python.exe -m mstack install-codex --target C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-direct-install\\codex-skills"
+      ],
+      "artifacts": {
+        "venv": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-direct-install\\venv",
+        "target_dir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-direct-install\\codex-skills",
+        "stdout": "[mstack] Codex target: C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-direct-install\\codex-skills\n[mstack] Installed: 9\n[mstack] Skipped: 0\n[mstack] Overwritten: 0\n[mstack] Installed names: mstack-careful, mstack-dispatch, mstack-investigate, mstack-pipeline, mstack-plan, mstack-qa, mstack-retro, mstack-review, mstack-ship"
+      },
+      "details": [
+        "validated:mstack-careful",
+        "validated:mstack-dispatch",
+        "validated:mstack-investigate",
+        "validated:mstack-pipeline",
+        "validated:mstack-plan",
+        "validated:mstack-qa",
+        "validated:mstack-retro",
+        "validated:mstack-review",
+        "validated:mstack-ship"
+      ],
+      "error": null
+    },
+    {
+      "name": "lane-plugin-install",
+      "status": "passed",
+      "duration_sec": 200.16,
+      "commands": [
+        "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\venv\\Scripts\\python.exe -m pip install C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\wheelhouse\\mstack-1.1.0-py3-none-any.whl",
+        "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\venv\\Scripts\\python.exe -m mstack install-codex-plugin --target C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\plugins\\mstack-codex --with-marketplace --marketplace-path C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\.agents\\plugins\\marketplace.json"
+      ],
+      "artifacts": {
+        "venv": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\venv",
+        "plugin_root": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\plugins\\mstack-codex",
+        "marketplace_path": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T052709Z\\lane-plugin-install\\.agents\\plugins\\marketplace.json",
+        "stdout": "[mstack] Plugin target: C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T052709Z/lane-plugin-install/plugins/mstack-codex\n[mstack] Plugin manifest: C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T052709Z/lane-plugin-install/plugins/mstack-codex/.codex-plugin/plugin.json\n[mstack] Plugin name: mstack-codex\n[mstack] Installed: 9\n[mstack] Skipped: 0\n[mstack] Overwritten: 0\n[mstack] Marketplace path: C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T052709Z/lane-plugin-install/.agents/plugins/marketplace.json\n[mstack] Marketplace updated: 1"
+      },
+      "details": [
+        "validated:plugin-manifest",
+        "validated:plugin-skill-tree",
+        "validated:plugin-managed-marker",
+        "validated:marketplace-entry"
+      ],
+      "error": null
+    },
+    {
+      "name": "lane-runtime-smoke",
+      "status": "failed",
+      "duration_sec": 885.47,
+      "commands": [],
+      "artifacts": {},
+      "details": [],
+      "error": "Traceback (most recent call last):\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\codex_runtime_smoke.py\", line 440, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\codex_runtime_smoke.py\", line 427, in main\n    summary = run_smoke(\n              ^^^^^^^^^^\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\codex_runtime_smoke.py\", line 413, in run_smoke\n    shutil.copy2(path, keep_dir / path.name)\n  File \"C:\\Program Files\\Python311\\Lib\\shutil.py\", line 448, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"C:\\Program Files\\Python311\\Lib\\shutil.py\", line 256, in copyfile\n    with open(src, 'rb') as fsrc:\n         ^^^^^^^^^^^^^^^\nPermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\SAMSUNG\\\\AppData\\\\Local\\\\Temp\\\\codex-runtime-smoke-wq2n4rfh\\\\isolated-workdir'\n\nTraceback (most recent call last):\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\run_codex_skill_validation.py\", line 317, in _run_lane\n    return lane_fn(wheel_path, lane_root)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\run_codex_skill_validation.py\", line 285, in _lane_runtime_smoke\n    raise RuntimeError(smoke.stderr or smoke.stdout or \"runtime smoke failed\")\nRuntimeError: Traceback (most recent call last):\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\codex_runtime_smoke.py\", line 440, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\codex_runtime_smoke.py\", line 427, in main\n    summary = run_smoke(\n              ^^^^^^^^^^\n  File \"C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\scripts\\codex_runtime_smoke.py\", line 413, in run_smoke\n    shutil.copy2(path, keep_dir / path.name)\n  File \"C:\\Program Files\\Python311\\Lib\\shutil.py\", line 448, in copy2\n    copyfile(src, dst, follow_symlinks=follow_symlinks)\n  File \"C:\\Program Files\\Python311\\Lib\\shutil.py\", line 256, in copyfile\n    with open(src, 'rb') as fsrc:\n         ^^^^^^^^^^^^^^^\nPermissionError: [Errno 13] Permission denied: 'C:\\\\Users\\\\SAMSUNG\\\\AppData\\\\Local\\\\Temp\\\\codex-runtime-smoke-wq2n4rfh\\\\isolated-workdir'\n\n"
+    }
+  ]
+}

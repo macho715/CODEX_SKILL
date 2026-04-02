@@ -1,0 +1,84 @@
+{
+  "request": {
+    "mode": "update",
+    "target_skill": "skill-update",
+    "repo_root": ".",
+    "intent": "Update or create a Codex skill using parallel-first execution, automatic reuse detection, and latest official documentation.",
+    "internet_allowed": true,
+    "allow_destructive": false,
+    "emit_optional_agents": true,
+    "notes": "Use official OpenAI docs only for behavior-changing facts."
+  },
+  "inventory_summary": {
+    "skill_count": 28,
+    "scanned_source_count": 4
+  },
+  "exact_matches": [
+    {
+      "path": "C:\\Users\\SAMSUNG\\Downloads\\skill\\codex-skill-update-pack\\.agents\\skills\\skill-update",
+      "folder_name": "skill-update",
+      "name": "skill-update",
+      "description": "Update or create Codex skills with a parallel-first workflow. Use when you need to benchmark a skill against the latest official docs, detect related existing skills and processes, reuse compatible assets, and produce validated skill patches or a new skill package.",
+      "scripts": [
+        "scripts\\build_update_plan.py",
+        "scripts\\scan_skill_graph.py",
+        "scripts\\validate_outputs.py"
+      ],
+      "references": [
+        "references\\official-benchmark-2026.md"
+      ],
+      "examples": [
+        "examples\\request.example.json"
+      ]
+    }
+  ],
+  "similar_matches": [],
+  "recommendations": [
+    {
+      "type": "update-existing",
+      "reason": "Exact existing skill found for 'skill-update'. Update in place unless approval requires a fork."
+    }
+  ],
+  "parallel_plan": {
+    "mode": "parallel-first",
+    "lanes": [
+      {
+        "lane": "A",
+        "name": "inventory-scout",
+        "goal": "discover skills, AGENTS.md, scripts, overlaps"
+      },
+      {
+        "lane": "B",
+        "name": "official-doc-scout",
+        "goal": "benchmark against latest official docs"
+      },
+      {
+        "lane": "C",
+        "name": "author-worker",
+        "goal": "author or patch the target skill"
+      },
+      {
+        "lane": "D",
+        "name": "verifier",
+        "goal": "validate outputs and downgrade if parallel support was absent"
+      }
+    ],
+    "emit_optional_agents": true
+  },
+  "authoring_rules": [
+    "Reuse existing scripts where practical.",
+    "Keep SKILL.md concise; move long notes to references/.",
+    "Add dry-run gates before destructive steps.",
+    "Prefer repo-scoped .agents/skills unless user explicitly wants global install.",
+    "Mark unsupported runtime capabilities as degraded instead of pretending they ran."
+  ],
+  "benchmark_source": "official-openai-docs",
+  "next_files": [
+    ".agents/skills/skill-update/SKILL.md",
+    ".agents/skills/skill-update/scripts/*",
+    ".agents/skills/skill-update/references/*",
+    "artifacts/benchmark_notes.md",
+    "artifacts/verification_report.md"
+  ],
+  "intent": "Update or create a Codex skill using parallel-first execution, automatic reuse detection, and latest official documentation."
+}

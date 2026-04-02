@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Pipeline"
+  short_description: "Run the full end-to-end mstack workflow from one request"
+  default_prompt: "Use this skill for one-shot end-to-end work. Reconstruct the current project state from plans, review notes, tests, and changed files, treat approved scope and file targets as authoritative for the current run, resume from the furthest incomplete stage, apply mstack-careful and mstack-dispatch, and if dispatch marks subagents or parallel execution as required, do not finish as DONE unless that delegation actually starts or the user explicitly accepts a single-agent fallback. Do not shrink an approved 5+ file plan to direct execution only because the reproduced failure happens in fewer files. Do not use it for design-only, review-only, QA-only, or simple explanation requests."

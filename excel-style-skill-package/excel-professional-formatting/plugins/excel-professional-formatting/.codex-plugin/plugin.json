@@ -1,0 +1,13 @@
+{
+  "name": "excel-professional-formatting",
+  "version": "0.1.0",
+  "description": "Plugin-first Excel formatting passes with sidecar promotion and validation gates.",
+  "license": "[TODO: license]",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Excel Professional Formatting",
+    "shortDescription": "Sidecar-first Excel formatting with promotion and validation gates.",
+    "privacyPolicyURL": "[TODO: privacy-policy-url]",
+    "termsOfServiceURL": "[TODO: terms-of-service-url]"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Retro"
+  short_description: "Review completed work with evidence and follow-up actions"
+  default_prompt: "Use this skill only after work is complete. Summarize keep, improve, learn, metrics, and action items from real evidence. Do not use it for in-progress implementation or pre-merge review."

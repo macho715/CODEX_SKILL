@@ -1,0 +1,7 @@
+**AUTO-FIX**
+- Hardcoded API key in the new function. This is a secret-management issue and should be replaced with configuration or environment-based injection immediately.
+- The new function has no tests. Add coverage for the new behavior, including at least one success case and one failure/edge case, before merge.
+
+**SURFACE**
+- The API key should not live in source even temporarily. If this change is already committed anywhere, rotate the exposed key and audit downstream usage.
+- If the function is public or reachable from existing call paths, add a regression test that proves the key is sourced externally so the mistake does not recur.

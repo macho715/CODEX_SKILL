@@ -1,0 +1,7 @@
+interface:
+  display_name: "Excel VBA Automation"
+  short_description: "VBA-first Excel automation with explicit parallel lanes and patch-in-place safeguards"
+  default_prompt: "Use $excel-vba to design VBA-first Excel automation, preserve existing workbook structure by patching in place, and split explicit parallel work into manager, guardrail, implementation, and QA lanes. Add Python only when it constructs workbook assets for the VBA workflow."
+
+policy:
+  allow_implicit_invocation: true

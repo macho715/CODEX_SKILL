@@ -1,0 +1,21 @@
+{
+  "name": "local-marketplace",
+  "interface": {
+    "displayName": "Local Plugins"
+  },
+  "plugins": [
+    {
+      "name": "mstack-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/mstack-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity",
+      "description": "Plugin-first MStack Codex skill distribution"
+    }
+  ]
+}

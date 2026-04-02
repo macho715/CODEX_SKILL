@@ -1,0 +1,9 @@
+- `mstack-careful`
+- `mstack-dispatch`
+- `mstack-investigate`
+- `mstack-pipeline`
+- `mstack-plan`
+- `mstack-qa`
+- `mstack-retro`
+- `mstack-review`
+- `mstack-ship`

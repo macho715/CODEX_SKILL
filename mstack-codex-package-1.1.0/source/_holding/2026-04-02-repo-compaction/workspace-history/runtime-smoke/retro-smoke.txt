@@ -1,0 +1,4 @@
+Task Summary: Completed feature shipped late and required one QA bug fix before release.
+Keep: Clear late-stage QA validation and finishing the feature despite schedule pressure.
+Improve: Earlier integration testing and tighter milestone tracking to reduce slip risk.
+Action Items: Add a pre-QA checklist, surface schedule blockers sooner, and track defect trends for the next release.

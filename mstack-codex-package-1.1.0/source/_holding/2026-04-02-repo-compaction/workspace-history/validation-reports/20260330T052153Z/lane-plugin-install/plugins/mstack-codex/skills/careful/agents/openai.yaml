@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Careful"
+  short_description: "Apply a cross-cutting safety layer before risky work"
+  default_prompt: "Use this skill as a safety layer before risky work. Call out the risk, block destructive or secret-exposing actions, and then hand control back to the stage-specific mstack skill when the request is safe."

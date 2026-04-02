@@ -1,0 +1,59 @@
+---
+name: excel-vba
+description: Build, repair, extend, or refactor Excel VBA and workbook automation safely. Use when the task mentions VBA, macros, xlsm/xlsb files, workbook buttons, event handlers, named ranges, ListObjects, formula preservation, or compatibility-sensitive workbook changes. Use this skill before `excel-professional-formatting` whenever workbook behavior must remain intact.
+---
+
+# Excel VBA
+
+Treat workbook structure, VBA, and compatibility as the first priority.
+Keep visual polish as a separate downstream phase.
+
+## Workflow
+
+1. Inspect the workbook contract before proposing edits.
+2. Classify the work as a VBA patch, workbook automation build, isolated module or sheet addition, or collision review.
+3. Preserve structure before touching presentation:
+   - file format
+   - sheet names and header rows
+   - ListObjects and named ranges
+   - formulas and validations
+   - buttons, shapes, and assigned macros
+   - worksheet and workbook events
+   - hidden or protected sheets
+4. Prefer the least invasive path:
+   - patch the existing workbook
+   - add an isolated sheet or module
+   - generate a compatible sidecar component when direct edits are risky
+5. If the user also wants styling, read [references/formatting-handoff.md](references/formatting-handoff.md) and prepare the handoff only after logic validation passes.
+
+## Core Rules
+
+- Preserve workbook behavior first.
+- Prefer minimal edits over rewrites.
+- Keep `.xlsm` and `.xlsb` macro-enabled formats intact.
+- Preserve formulas, ListObjects, named ranges, validations, controls, and macro bindings unless the user explicitly approves a change.
+- Do not let formatting work alter table headers, table names, named ranges, control placement, or merged-cell discipline inside data regions.
+- If structure-sensitive formatting is required, stop and hand the task back through the formatting handoff instead of guessing.
+
+## Validation
+
+Verify all of the following before finalizing:
+
+- the workbook opens without a repair prompt
+- macros compile when applicable
+- formulas still calculate
+- named ranges still resolve
+- tables still filter and resize
+- buttons and shapes still invoke valid procedures
+- no critical references shifted unintentionally
+
+## Outputs
+
+Return:
+
+1. task classification
+2. workbook risk summary
+3. proposed or applied logic changes
+4. compatibility notes
+5. validation results
+6. formatting handoff summary when the workbook also needs visual polish

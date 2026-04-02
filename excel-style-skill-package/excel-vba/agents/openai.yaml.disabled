@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel VBA Workbook Safety"
+  short_description: "Workbook-safe Excel VBA and automation"
+  default_prompt: "Use $excel-vba to patch or design workbook-safe Excel VBA automation while preserving formulas, tables, named ranges, and macro behavior."

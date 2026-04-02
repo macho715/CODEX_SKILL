@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Investigate"
+  short_description: "Diagnose failures before editing production code"
+  default_prompt: "Use this skill only to reproduce the failure, form and test three hypotheses, gather evidence, and report the root cause and regression test before changing production code. Prefer mstack-qa for verification-only work."

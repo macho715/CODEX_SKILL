@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Pipeline"
+  short_description: "Run the full end-to-end mstack workflow from one request"
+  default_prompt: "Use this skill only for one-shot end-to-end work. Apply mstack-careful and mstack-dispatch first, then chain plan or investigate, implement, review, qa, ship, and retro. Do not use it for design-only, review-only, QA-only, or simple explanation requests."

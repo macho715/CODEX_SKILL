@@ -1,0 +1,4 @@
+interface:
+  display_name: "MStack Dispatch"
+  short_description: "Choose execution mode and ownership for multi-file work"
+  default_prompt: "Use this skill only to choose direct execution, subagents, or parallel teams, estimate coupling, assign ownership, and define validation. If the user wants one-shot end-to-end execution, prefer mstack-pipeline instead."

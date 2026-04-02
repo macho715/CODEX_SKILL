@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Doc Orchestrator"
+  short_description: "Refreshes current-project docs from real repo evidence"
+  default_prompt: "Use $project-doc-orchestrator for the current repo to inspect the real repository and refresh the managed README, PLAN, LAYOUT, ARCHITECTURE, CHANGELOG, and GUIDE docs in parallel after project changes."

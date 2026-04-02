@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scenario Scorer"
+  short_description: "Score options as an independent agent in the pipeline"
+  default_prompt: "Use $scenario-scorer as the scoring agent for this analysis pipeline and return only the scoring artifact."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Analysis Verifier"
+  short_description: "Independently verify pipeline outputs and required patches"
+  default_prompt: "Use $analysis-verifier as the verifier agent for this pipeline and return PASS/FAIL/AMBER with required patches."

@@ -1,0 +1,5 @@
+Package: mstack Codex distribution
+Version: 1.1.0
+Install: 1) python -m pip install wheel\\mstack-1.1.0-py3-none-any.whl  2) mstack install-codex-plugin
+Compatibility: direct skill install remains available through mstack install-codex
+Contents: wheel + source(core, skills, skills-codex, plugins, presets, scripts, tests, docs)

@@ -1,0 +1,135 @@
+{
+  "ok": true,
+  "repo": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+  "skills_source": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\validation-reports\\20260330T054531Z\\lane-runtime-smoke\\venv\\Lib\\site-packages\\core\\_assets\\skills-codex",
+  "results": [
+    {
+      "name": "mstack-careful",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\careful-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Risk:",
+        "found:Blocked Action:",
+        "found:Safer Alternative:"
+      ],
+      "stdout_tail": "Risk: High, because `git push --force` to `main` can rewrite shared history, drop collaborators’ work, and bypass release/review safeguards.\n\nBlocked Action: Do not force-push to `main`.\n\nSafer Alternative: Push to a feature branch and open a PR, or use a non-forced merge/revert workflow; if history rewrite is absolutely required, get explicit team approval and coordinate a protected maintenance window first."
+    },
+    {
+      "name": "mstack-dispatch",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\dispatch-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Mode:",
+        "found:Ownership:",
+        "found:Validation:"
+      ],
+      "stdout_tail": "Mode: `AGENT_TEAMS` with 2 parallel workers, one owning UI files and one owning API files, plus a lead for integration.\nRisks: Cross-module contract drift, shared types/schema mismatch, UI/API merge conflicts, and incomplete validation if ownership boundaries are not explicit.\nOwnership: UI worker owns the 3 UI files; API worker owns the 3 API files; lead owns any shared contract file and final integration review.\nValidation: Per-worker unit tests on owned areas, then one integration test pass covering the UI/API boundary and any shared contract assertions."
+    },
+    {
+      "name": "mstack-investigate",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\investigate-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Hypotheses:",
+        "found:Root Cause:",
+        "found:Regression Test:"
+      ],
+      "stdout_tail": "\nFix Recommendation:\n- Add a pre-parse check for empty or whitespace-only CSV input and return a controlled error like “CSV file is empty.”\n- If empty files should be allowed, short-circuit the import and return an empty result instead of entering row-processing logic.\n- Add defensive checks around header parsing and first-row access so all parsing stages handle zero records safely.\n- Preserve the existing failure behavior for malformed CSV, but separate that from the empty-file case.\n\nRegression Test:\n- Add a test that imports a zero-byte CSV file and asserts the importer does not crash.\n- Verify the expected outcome explicitly: either a clean error message for empty input or a successful empty import result, depending on product behavior.\n- Add a second test for a file containing only a newline or whitespace to cover the near-empty case.\n- Ensure the test asserts no uncaught exception, no stack trace, and no partial state is written."
+    },
+    {
+      "name": "mstack-plan",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\plan-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Phase 1",
+        "found:Phase 2"
+      ],
+      "stdout_tail": "**Phase 1**\n- Define the CSV import flow, field mapping, and validation rules for todo records.\n- Design the UI entry point and error/reporting behavior for successful and failed imports.\n\n**Phase 2**\n- Implement CSV parsing, row-to-todo conversion, and persistence into the existing todo store.\n- Add import tests covering valid files, malformed rows, empty files, and duplicate handling."
+    },
+    {
+      "name": "mstack-pipeline",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\pipeline-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\isolated-workdir",
+      "isolated": true,
+      "passed": true,
+      "checks": [
+        "found:Stage Order: careful -> dispatch -> plan -> implement -> review -> qa -> ship -> retro",
+        "found:Stop Conditions:",
+        "found:Final Output:"
+      ],
+      "stdout_tail": "Stage Order: careful -> dispatch -> plan -> implement -> review -> qa -> ship -> retro\nStop Conditions: Stop if the repository or runtime state cannot be inspected, if implementation details are ambiguous, or if any stage fails validation and needs user clarification.\nFinal Output: A completed end-to-end delivery plan for CSV import in the todo app, from scoped design through implementation, review, QA, release readiness, and retrospective notes."
+    },
+    {
+      "name": "mstack-qa",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\qa-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Mode:",
+        "found:Results:",
+        "found:Regression Tests:"
+      ],
+      "stdout_tail": "Mode: QA assessment only, no repository inspection or command execution\nResults: High regression risk because CSV parsing changes can break quoting, delimiters, escapes, empty fields, embedded newlines, and malformed input handling; no tests means the change is not release-ready\nRegression Tests: Add unit tests for basic rows, quoted fields, escaped quotes, commas inside fields, empty fields, trailing delimiters, CRLF/LF handling, multiline fields, malformed CSV rejection, and a small end-to-end parse fixture for representative real-world files"
+    },
+    {
+      "name": "mstack-retro",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\retro-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Task Summary:",
+        "found:Keep:",
+        "found:Action Items:"
+      ],
+      "stdout_tail": "Task Summary: Completed feature shipped late and required one QA bug fix before release.\nKeep: Clear late-stage QA validation and finishing the feature despite schedule pressure.\nImprove: Earlier integration testing and tighter milestone tracking to reduce slip risk.\nAction Items: Add a pre-QA checklist, surface schedule blockers sooner, and track defect trends for the next release."
+    },
+    {
+      "name": "mstack-review",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\review-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:AUTO-FIX",
+        "found:SURFACE"
+      ],
+      "stdout_tail": "**AUTO-FIX**\n- Hardcoded API key in the new function. This is a secret-management issue and should be replaced with configuration or environment-based injection immediately.\n- The new function has no tests. Add coverage for the new behavior, including at least one success case and one failure/edge case, before merge.\n\n**SURFACE**\n- The API key should not live in source even temporarily. If this change is already committed anywhere, rotate the exposed key and audit downstream usage.\n- If the function is public or reachable from existing call paths, add a regression test that proves the key is sourced externally so the mistake does not recur."
+    },
+    {
+      "name": "mstack-ship",
+      "output_file": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk\\ship-smoke.txt",
+      "workdir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source",
+      "isolated": false,
+      "passed": true,
+      "checks": [
+        "found:Status:",
+        "found:Checks:",
+        "found:Push Guidance:"
+      ],
+      "stdout_tail": "Status: Not ready to ship\nChecks: Tests passed; commit hygiene check failed because the commit message is too vague for release readiness\nBlockers: Rewrite the commit message to describe the change clearly; confirm there are no other unverified release risks\nPush Guidance: Do not push to `main` until the commit message is made specific and the release metadata is acceptable"
+    }
+  ],
+  "skills_list": [
+    "- `mstack-careful`",
+    "- `mstack-dispatch`",
+    "- `mstack-investigate`",
+    "- `mstack-pipeline`",
+    "- `mstack-plan`",
+    "- `mstack-qa`",
+    "- `mstack-retro`",
+    "- `mstack-review`",
+    "- `mstack-ship`"
+  ],
+  "output_dir": "C:\\Users\\SAMSUNG\\AppData\\Local\\Temp\\codex-runtime-smoke-5u6t3lsk",
+  "persisted_output_dir": "C:\\Users\\SAMSUNG\\Downloads\\skill\\mstack-codex-package-1.1.0\\source\\skills-workspace\\runtime-smoke"
+}

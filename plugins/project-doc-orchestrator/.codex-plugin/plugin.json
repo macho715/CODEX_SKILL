@@ -1,0 +1,42 @@
+{
+  "name": "project-doc-orchestrator",
+  "version": "0.1.0",
+  "description": "Bundle the Project Doc Orchestrator skill as a reusable Codex plugin.",
+  "author": {
+    "name": "[TODO: author-name]",
+    "email": "[TODO: author-email]",
+    "url": "[TODO: author-url]"
+  },
+  "homepage": "[TODO: plugin-homepage-url]",
+  "repository": "[TODO: plugin-repository-url]",
+  "license": "[TODO: license]",
+  "keywords": [
+    "codex",
+    "skill",
+    "documentation",
+    "orchestration",
+    "parallel"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Project Doc Orchestrator",
+    "shortDescription": "Refresh current-project docs from real repo evidence",
+    "longDescription": "Inspects the active repository, builds an evidence-backed snapshot, and refreshes the managed README, PLAN, LAYOUT, ARCHITECTURE, CHANGELOG, and GUIDE docs in parallel lanes.",
+    "developerName": "[TODO: developer-name]",
+    "category": "Productivity",
+    "capabilities": [
+      "Analyze",
+      "Write",
+      "Parallel"
+    ],
+    "websiteURL": "[TODO: website-url]",
+    "privacyPolicyURL": "[TODO: privacy-policy-url]",
+    "termsOfServiceURL": "[TODO: terms-of-service-url]",
+    "defaultPrompt": [
+      "Refresh docs/project-docs for the current repo after code changes.",
+      "Inspect this repository and rebuild the managed project docs bundle.",
+      "Update README, PLAN, LAYOUT, ARCHITECTURE, CHANGELOG, and GUIDE from real repo evidence."
+    ],
+    "brandColor": "#1F6FEB"
+  }
+}

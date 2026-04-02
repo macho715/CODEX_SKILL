@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.pyo
+.claude/group-logs/
+.claude/room-binding.json

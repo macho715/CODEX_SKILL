@@ -1,0 +1,4 @@
+Status: Not ready to ship
+Checks: Tests passed; commit hygiene check failed because the commit message is too vague for release readiness
+Blockers: Rewrite the commit message to describe the change clearly; confirm there are no other unverified release risks
+Push Guidance: Do not push to `main` until the commit message is made specific and the release metadata is acceptable

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design Upgrade Loop"
+  short_description: "Benchmark, patch, and verify webpages, dashboards, and document-style screens."
+  default_prompt: "Use this skill to benchmark the current design, propose at least 3 transferable elements, patch concrete targets, and validate the result with a scorecard."
+policy:
+  allow_implicit_invocation: false

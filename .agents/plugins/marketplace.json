@@ -1,0 +1,20 @@
+{
+  "name": "local-skill-workspace",
+  "interface": {
+    "displayName": "Local Skill Workspace"
+  },
+  "plugins": [
+    {
+      "name": "project-doc-orchestrator",
+      "source": {
+        "source": "local",
+        "path": "./plugins/project-doc-orchestrator"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

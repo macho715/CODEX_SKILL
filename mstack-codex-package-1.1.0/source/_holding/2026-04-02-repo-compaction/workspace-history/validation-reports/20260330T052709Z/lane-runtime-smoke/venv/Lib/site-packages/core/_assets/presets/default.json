@@ -1,0 +1,21 @@
+{
+  "name": "default",
+  "lang": "python",
+  "test_cmd": "pytest tests/ -x",
+  "lint_cmd": "ruff check .",
+  "type_cmd": "mypy --strict .",
+  "rules": [
+    "Always use type hints",
+    "Follow PEP 8"
+  ],
+  "permissions": {
+    "Bash": true,
+    "Edit": true,
+    "Write": true,
+    "Read": true
+  },
+  "hooks_level": "basic",
+  "custom_skills": [],
+  "domain_terms": {},
+  "fanr_rules": []
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel Professional Formatting"
+  short_description: "Professional Excel formatting and print polish"
+  default_prompt: "Use $excel-professional-formatting to apply workbook-safe Excel styling, readability cleanup, accessibility checks, and print-layout polish after logic is stable."

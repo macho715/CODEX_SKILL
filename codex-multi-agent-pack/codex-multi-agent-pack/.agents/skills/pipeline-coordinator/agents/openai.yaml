@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pipeline Coordinator"
+  short_description: "Run a fixed 4-agent analysis pipeline and final merge"
+  default_prompt: "Use $pipeline-coordinator to run the 4-agent pipeline with separate analysis, scoring, and verification agents."

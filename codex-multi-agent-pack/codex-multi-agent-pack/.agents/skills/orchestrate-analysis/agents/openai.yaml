@@ -1,0 +1,4 @@
+interface:
+  display_name: "Orchestrate Analysis"
+  short_description: "Produce merged analysis artifacts for agent pipelines"
+  default_prompt: "Use $orchestrate-analysis to prepare MERGED_DRAFT and SCORING_HANDOFF for the pipeline."

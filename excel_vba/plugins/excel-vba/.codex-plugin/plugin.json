@@ -1,0 +1,13 @@
+{
+  "name": "excel-vba",
+  "version": "0.1.0",
+  "description": "Plugin-first Excel VBA automation with explicit parallel review and validation support.",
+  "license": "[TODO: license]",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Excel VBA",
+    "shortDescription": "VBA-first Excel automation with parallel review and validation lanes.",
+    "privacyPolicyURL": "[TODO: privacy-policy-url]",
+    "termsOfServiceURL": "[TODO: terms-of-service-url]"
+  }
+}

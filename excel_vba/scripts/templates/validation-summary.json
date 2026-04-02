@@ -1,0 +1,36 @@
+{
+  "timestamp": "",
+  "rootPath": "",
+  "outputPath": "",
+  "overall": "",
+  "lanes": [
+    {
+      "lane": "skill-structure",
+      "status": "",
+      "checks": [],
+      "notes": [],
+      "artifacts": []
+    },
+    {
+      "lane": "plugin-package",
+      "status": "",
+      "checks": [],
+      "notes": [],
+      "artifacts": []
+    },
+    {
+      "lane": "install-registration",
+      "status": "",
+      "checks": [],
+      "notes": [],
+      "artifacts": []
+    },
+    {
+      "lane": "qa-contract",
+      "status": "",
+      "checks": [],
+      "notes": [],
+      "artifacts": []
+    }
+  ]
+}
