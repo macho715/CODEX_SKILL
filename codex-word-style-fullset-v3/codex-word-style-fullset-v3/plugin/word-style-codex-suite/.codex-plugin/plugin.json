@@ -1,0 +1,21 @@
+{
+  "name": "word-style-codex-suite",
+  "version": "3.0.0",
+  "description": "Bundle the KR/EN Word document style skill for Codex.",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Word Style Codex Suite",
+    "shortDescription": "Patch KR/EN Word documents with Aptos + 맑은 고딕 standards.",
+    "longDescription": "Normalize headings, spacing, numbering, tables, captions, and accessibility while preserving facts.",
+    "developerName": "Local Team",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Word Style Codex Suite to audit this document and return patch-list-only.",
+      "Use Word Style Codex Suite to generate a Korean bilingual Word style spec."
+    ]
+  }
+}

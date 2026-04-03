@@ -1,0 +1,6 @@
+interface:
+  display_name: "Word Style Upgrade KR/EN"
+  short_description: "KR/EN Word 문서를 Aptos + 맑은 고딕 기준으로 audit/patch합니다."
+  default_prompt: "Use this skill to audit the document, preserve all facts, and return patch-list-only with AMBER layout checks separated."
+policy:
+  allow_implicit_invocation: true
