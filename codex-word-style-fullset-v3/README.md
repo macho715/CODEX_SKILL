@@ -47,3 +47,11 @@ Use $word-style-upgrade in style-spec-only mode for a Korean internal report.
 ## Plugin 배포
 로컬 authoring은 `.agents/skills`가 적합하고, 재배포는 plugin이 적합합니다.  
 `plugin/word-style-codex-suite/`에 최소 plugin manifest와 동일 skill 복사본을 넣어 두었습니다.
+
+## Git 최소 수신
+다른 컴퓨터에서 Git으로 받을 때는 `codex/word-style-package-20260403` 브랜치 기준으로 아래 두 항목만 sparse-checkout 하면 됩니다.
+
+- `codex-word-style-fullset-v3/`
+- `codex-word-style-identical-install-20260403.zip`
+
+상세 명령은 [INSTALL.md](C:/Users/jichu/Downloads/codex_skill/codex-word-style-fullset-v3/INSTALL.md)에 정리되어 있습니다.
