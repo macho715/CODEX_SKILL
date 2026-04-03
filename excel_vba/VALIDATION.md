@@ -7,6 +7,7 @@ Use this guide with `scripts/run_excel_vba_validation.ps1` after skill activatio
 - `Plugin/package`: checks for Codex plugin packaging artifacts, manifest parsing, and source/plugin consistency.
 - `Install/registration`: checks direct skill install support and local Codex/plugin registration paths.
 - `QA contract`: checks that the workbook safety rules, reopen smoke guidance, and output contract are documented.
+- `Contract pack`: checks that `excel-xlsm-contract-ops`, its plugin-embedded companion tree, root guardrails, runtime heartbeat rules, `.codex/agents`, and `docs/ops` are present and aligned.
 
 ## Report outputs
 The runner writes two files per run:

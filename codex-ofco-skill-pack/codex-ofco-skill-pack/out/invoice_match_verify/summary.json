@@ -1,0 +1,8 @@
+{
+  "skill": "invoice_match_verify",
+  "tolerance_pct": 2.0,
+  "total_rows": 2,
+  "matched": 2,
+  "mismatch": 0,
+  "unmatched": 0
+}

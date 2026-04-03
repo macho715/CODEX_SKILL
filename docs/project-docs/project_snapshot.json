@@ -1,20 +1,63 @@
 {
-  "generated_at": "2026-03-30T04:38:56+00:00",
+  "generated_at": "2026-04-03T17:14:40+00:00",
   "project_root": "C:\\Users\\SAMSUNG\\Downloads\\skill",
-  "project_name": "mstack",
+  "project_name": "Skill Workspace",
   "docs_root_default": "C:\\Users\\SAMSUNG\\Downloads\\skill\\docs\\project-docs",
   "inspected_files": [
+    "README.md",
+    "codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py",
+    "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py",
+    "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py",
+    "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py",
+    "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py",
+    "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py",
+    "codex-ofco-skill-pack/codex-ofco-skill-pack/README.md",
+    "codex-openspace-merge-pack/README.md",
+    "codex-openspace-merge-pack/automation/requirements.txt",
+    "codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py",
+    "codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py",
+    "codex-skill-update-pack/.agents/skills/skill-update/scripts/validate_outputs.py",
+    "codex-skill-update-pack/README.md",
+    "codex/word-style-package-20260403/README.md",
+    "codex_excel_risk_pack/codex_excel_risk_pack/README-CODEX-EXCEL-RISK-PACK.md",
+    "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/benchmark-notes-2026.md",
+    "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/excel-runtime-runbook.md",
+    "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/prompt-examples.md",
+    "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/validation-checklist.md",
+    "design-upgrade-loop-package/design-upgrade-loop-package/.agents/skills/design-upgrade-loop/scripts/validate_design_scorecard.py",
+    "docs/workspace-notes/README.md",
+    "docs/workspace-notes/agitr.md",
+    "docs/workspace-notes/agitr_change_report.md",
+    "docs/workspace-notes/codex_skill_plugin_mutiagent_guidebook.md",
     "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
     "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
     "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py",
     "excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py",
     "excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
     "excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py",
+    "excel-style-skill-package/excel-professional-formatting/README.md",
+    "excel-style-skill-package/excel-professional-formatting/scripts/run_excel_professional_formatting_validation.ps1",
     "excel_vba/README.md",
+    "excel_vba/codex_excel_risk_pack/README-CODEX-EXCEL-RISK-PACK.md",
+    "excel_vba/codex_excel_risk_pack/docs/ops/benchmark-notes-2026.md",
+    "excel_vba/codex_excel_risk_pack/docs/ops/excel-runtime-runbook.md",
+    "excel_vba/codex_excel_risk_pack/docs/ops/prompt-examples.md",
+    "excel_vba/codex_excel_risk_pack/docs/ops/validation-checklist.md",
+    "excel_vba/docs/ops/benchmark-notes-2026.md",
+    "excel_vba/docs/ops/excel-runtime-runbook.md",
+    "excel_vba/docs/ops/prompt-examples.md",
+    "excel_vba/docs/ops/validation-checklist.md",
     "excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1",
+    "excel_vba/plugins/excel-vba/skills/excel-vba/scripts/build-reopen-smoketest.ps1",
+    "excel_vba/scripts/run_excel_vba_validation.ps1",
     "mstack-codex-package-1.1.0/source/README.md",
+    "mstack-codex-package-1.1.0/source/core/_assets/docs/MSTACK_SKILL_GUIDE.md",
+    "mstack-codex-package-1.1.0/source/dist-delivery/mstack-codex-portable-1.1.0/docs/INSTALL_CODEX.md",
+    "mstack-codex-package-1.1.0/source/dist-delivery/mstack-codex-portable-1.1.0/docs/MSTACK_SKILL_GUIDE.md",
+    "mstack-codex-package-1.1.0/source/dist-delivery/mstack-codex-portable-1.1.0/docs/README.md",
     "mstack-codex-package-1.1.0/source/pyproject.toml",
     "mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py",
+    "mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py",
     "mstack-codex-package-1.1.0/source/tests/debug/README.md",
     "pdo-skill/scripts/doc_orchestrator_lib.py",
     "pdo-skill/scripts/patch_docs.py",
@@ -23,39 +66,23 @@
     "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py",
     "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py",
     "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/project_snapshot.py",
-    "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py",
-    "source/README.md",
-    "source/docs/ARCHITECTURE.md",
-    "source/docs/CHANGELOG.md",
-    "source/docs/LAYOUT.md",
-    "source/docs/README.md",
-    "source/docs/getting-started.md",
-    "source/docs/user-guide.md",
-    "source/pyproject.toml",
-    "source/scripts/codex_runtime_smoke.py",
-    "source/tests/debug/README.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/README.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/ARCHITECTURE.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/CHANGELOG.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/GUIDE.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/LAYOUT.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/PLAN.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/README.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/docs/usage.md",
-    "tmp-doc-orchestrator-parallel-test-20260330/package.json",
-    "tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1",
-    "tmp-doc-orchestrator-smoke-20260329100642/README.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/ARCHITECTURE.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/CHANGELOG.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/GUIDE.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/LAYOUT.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/PLAN.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/README.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/docs/usage.md",
-    "tmp-doc-orchestrator-smoke-20260329100642/package.json",
-    "tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1"
+    "plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py"
   ],
   "manifests": [
+    {
+      "kind": "requirements.txt",
+      "name": "automation",
+      "summary": "Python requirements list with 3 package(s)",
+      "commands": [
+        "python -m pip install -r requirements.txt"
+      ],
+      "dependencies": [
+        "openai-agents",
+        "python-dotenv",
+        "streamlit"
+      ],
+      "path": "codex-openspace-merge-pack/automation/requirements.txt"
+    },
     {
       "kind": "pyproject.toml",
       "name": "mstack",
@@ -68,52 +95,89 @@
         "mstack"
       ],
       "path": "mstack-codex-package-1.1.0/source/pyproject.toml"
-    },
-    {
-      "kind": "pyproject.toml",
-      "name": "mstack",
-      "version": "1.1.0",
-      "summary": "Python project manifest with 1 script entrypoint(s)",
-      "commands": [
-        "python -m mstack"
-      ],
-      "script_names": [
-        "mstack"
-      ],
-      "path": "source/pyproject.toml"
-    },
-    {
-      "kind": "package.json",
-      "name": "smoke-doc-app",
-      "version": "0.1.0",
-      "summary": "npm package with 2 script(s)",
-      "commands": [
-        "npm run docs",
-        "npm run start"
-      ],
-      "script_names": [
-        "docs",
-        "start"
-      ],
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/package.json"
-    },
-    {
-      "kind": "package.json",
-      "name": "smoke-doc-app",
-      "version": "0.1.0",
-      "summary": "npm package with 2 script(s)",
-      "commands": [
-        "npm run docs",
-        "npm run start"
-      ],
-      "script_names": [
-        "docs",
-        "start"
-      ],
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/package.json"
     }
   ],
   "scripts": [
+    {
+      "path": "codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py",
+      "kind": "py",
+      "summary": "\"\"\"Deterministic weighted scenario scorer.; Usage:",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py"
+      ]
+    },
+    {
+      "path": "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py",
+      "kind": "py",
+      "summary": "import json; import re",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py"
+      ]
+    },
+    {
+      "path": "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py",
+      "kind": "py",
+      "summary": "import json; import sys",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py"
+      ]
+    },
+    {
+      "path": "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py",
+      "kind": "py",
+      "summary": "import json; import math",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py"
+      ]
+    },
+    {
+      "path": "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py",
+      "kind": "py",
+      "summary": "import csv; import json",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py"
+      ]
+    },
+    {
+      "path": "codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py",
+      "kind": "py",
+      "summary": "import json; import sys",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py"
+      ]
+    },
+    {
+      "path": "codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py",
+      "kind": "py",
+      "summary": "from __future__ import annotations; import argparse",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py"
+      ]
+    },
+    {
+      "path": "codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py",
+      "kind": "py",
+      "summary": "from __future__ import annotations; import argparse",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py"
+      ]
+    },
+    {
+      "path": "codex-skill-update-pack/.agents/skills/skill-update/scripts/validate_outputs.py",
+      "kind": "py",
+      "summary": "from __future__ import annotations; import argparse",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/codex-skill-update-pack/.agents/skills/skill-update/scripts/validate_outputs.py"
+      ]
+    },
+    {
+      "path": "design-upgrade-loop-package/design-upgrade-loop-package/.agents/skills/design-upgrade-loop/scripts/validate_design_scorecard.py",
+      "kind": "py",
+      "summary": "\"\"\"Validate a design-upgrade scorecard and print a PASS/FAIL summary.; Usage:",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/design-upgrade-loop-package/design-upgrade-loop-package/.agents/skills/design-upgrade-loop/scripts/validate_design_scorecard.py"
+      ]
+    },
     {
       "path": "excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
       "kind": "py",
@@ -163,6 +227,14 @@
       ]
     },
     {
+      "path": "excel-style-skill-package/excel-professional-formatting/scripts/run_excel_professional_formatting_validation.ps1",
+      "kind": "ps1",
+      "summary": "param(; [string]$RootPath = (Split-Path -Parent $PSScriptRoot),",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/excel-professional-formatting/scripts/run_excel_professional_formatting_validation.ps1"
+      ]
+    },
+    {
       "path": "excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1",
       "kind": "ps1",
       "summary": "[CmdletBinding()]; param(",
@@ -171,11 +243,35 @@
       ]
     },
     {
+      "path": "excel_vba/plugins/excel-vba/skills/excel-vba/scripts/build-reopen-smoketest.ps1",
+      "kind": "ps1",
+      "summary": "[CmdletBinding()]; param(",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/plugins/excel-vba/skills/excel-vba/scripts/build-reopen-smoketest.ps1"
+      ]
+    },
+    {
+      "path": "excel_vba/scripts/run_excel_vba_validation.ps1",
+      "kind": "ps1",
+      "summary": "param(; [string]$RootPath = (Split-Path -Parent $PSScriptRoot),",
+      "commands": [
+        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/scripts/run_excel_vba_validation.ps1"
+      ]
+    },
+    {
       "path": "mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py",
       "kind": "py",
       "summary": "\"\"\"Runtime smoke test for Codex skills.; This script temporarily installs selected skills from ``skills-codex`` into the",
       "commands": [
         "python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py",
+      "kind": "py",
+      "summary": "\"\"\"Parallel end-to-end validation runner for MStack Codex skills and plugin packaging.; This script builds the wheel once, creates isolated virtual environments, runs",
+      "commands": [
+        "python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py"
       ]
     },
     {
@@ -241,54 +337,349 @@
       "commands": [
         "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py"
       ]
-    },
-    {
-      "path": "source/scripts/codex_runtime_smoke.py",
-      "kind": "py",
-      "summary": "\"\"\"Runtime smoke test for Codex skills.; This script temporarily installs selected skills from ``skills-codex`` into the",
-      "commands": [
-        "python C:/Users/SAMSUNG/Downloads/skill/source/scripts/codex_runtime_smoke.py"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1",
-      "kind": "ps1",
-      "summary": "Write-Output \"building smoke docs\"",
-      "commands": [
-        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1",
-      "kind": "ps1",
-      "summary": "Write-Output \"building smoke docs\"",
-      "commands": [
-        "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1"
-      ]
     }
   ],
   "docs": [
     {
+      "path": "README.md",
+      "title": "Skill Workspace",
+      "summary": "Start Here",
+      "headings": [
+        "Skill Workspace",
+        "Start Here",
+        "Main Projects",
+        "Other Package Folders",
+        "Workspace Layout"
+      ]
+    },
+    {
+      "path": "codex/word-style-package-20260403/README.md",
+      "title": "word-style-package-20260403",
+      "summary": "This package contains a repo-scoped Codex skill for refining Korean business",
+      "headings": [
+        "word-style-package-20260403"
+      ]
+    },
+    {
+      "path": "codex-ofco-skill-pack/codex-ofco-skill-pack/README.md",
+      "title": "Codex OFCO Skill Pack",
+      "summary": "Included skills",
+      "headings": [
+        "Codex OFCO Skill Pack",
+        "Included skills",
+        "Install",
+        "Run examples"
+      ]
+    },
+    {
+      "path": "codex-openspace-merge-pack/README.md",
+      "title": "Codex + OpenSpace Merge Pack",
+      "summary": "포함 내용",
+      "headings": [
+        "Codex + OpenSpace Merge Pack",
+        "포함 내용",
+        "전제",
+        "빠른 시작"
+      ]
+    },
+    {
+      "path": "codex-skill-update-pack/README.md",
+      "title": "codex-skill-update-pack",
+      "summary": "This package contains:",
+      "headings": [
+        "codex-skill-update-pack"
+      ]
+    },
+    {
+      "path": "codex_excel_risk_pack/codex_excel_risk_pack/README-CODEX-EXCEL-RISK-PACK.md",
+      "title": "Codex Excel High-Risk Pack",
+      "summary": "목적",
+      "headings": [
+        "Codex Excel High-Risk Pack",
+        "목적",
+        "구성 원칙",
+        "설치 순서",
+        "사용 순서"
+      ]
+    },
+    {
+      "path": "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/benchmark-notes-2026.md",
+      "title": "Benchmark Notes (2026)",
+      "summary": "목적",
+      "headings": [
+        "Benchmark Notes (2026)",
+        "목적",
+        "반영한 공식 Codex 문서",
+        "1. Custom instructions with AGENTS.md – Codex",
+        "2. Subagents – Codex"
+      ]
+    },
+    {
+      "path": "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/excel-runtime-runbook.md",
+      "title": "Excel Runtime Runbook",
+      "summary": "목적",
+      "headings": [
+        "Excel Runtime Runbook",
+        "목적",
+        "0. Precheck",
+        "1. Risk classify",
+        "2. Choose execution posture"
+      ]
+    },
+    {
+      "path": "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/prompt-examples.md",
+      "title": "Prompt Examples",
+      "summary": "1. Guarded serial write",
+      "headings": [
+        "Prompt Examples",
+        "1. Guarded serial write",
+        "2. Read-only preflight only",
+        "3. Python + VBA coexistence",
+        "4. Live workbook with possible unsaved changes"
+      ]
+    },
+    {
+      "path": "codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/validation-checklist.md",
+      "title": "Validation Checklist",
+      "summary": "A. Risk classification",
+      "headings": [
+        "Validation Checklist",
+        "A. Risk classification",
+        "B. Safety gate",
+        "C. Implementation gate",
+        "D. Verification gate"
+      ]
+    },
+    {
+      "path": "docs/workspace-notes/agitr.md",
+      "title": "요건\t설명",
+      "summary": "원인\t영향\t출처",
+      "headings": [
+        "요건\t설명",
+        "원인\t영향\t출처",
+        "파라미터\tGo 기준 (MS Rev.00)\t현장 실측\t판정"
+      ]
+    },
+    {
+      "path": "docs/workspace-notes/agitr_change_report.md",
+      "title": "agitr 변경 리포트",
+      "summary": "원본 파일: `C:\\Users\\SAMSUNG\\Downloads\\skill\\agitr.md`",
+      "headings": [
+        "agitr 변경 리포트"
+      ]
+    },
+    {
+      "path": "docs/workspace-notes/codex_skill_plugin_mutiagent_guidebook.md",
+      "title": "Codex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트",
+      "summary": "실행요약",
+      "headings": [
+        "Codex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트",
+        "실행요약",
+        "개요",
+        "정의·용어 맵",
+        "2026년 이후 “플러그인”의 의미 변화"
+      ]
+    },
+    {
+      "path": "docs/workspace-notes/README.md",
+      "title": "Workspace Notes",
+      "summary": "Navigation",
+      "headings": [
+        "Workspace Notes",
+        "Navigation",
+        "Files",
+        "Placement Rule"
+      ]
+    },
+    {
+      "path": "excel-style-skill-package/excel-professional-formatting/README.md",
+      "title": "excel-professional-formatting Skill Package",
+      "summary": "What is here",
+      "headings": [
+        "excel-professional-formatting Skill Package",
+        "What is here",
+        "Install",
+        "Validation"
+      ]
+    },
+    {
       "path": "excel_vba/README.md",
       "title": "excel-vba Skill Repo",
-      "summary": "Repo layout",
+      "summary": "What is here",
       "headings": [
         "excel-vba Skill Repo",
-        "Repo layout",
-        "Install from GitHub",
-        "Install from a local checkout"
+        "What is here",
+        "Install paths",
+        "Validation",
+        "GitHub install"
+      ]
+    },
+    {
+      "path": "excel_vba/codex_excel_risk_pack/README-CODEX-EXCEL-RISK-PACK.md",
+      "title": "Codex Excel High-Risk Pack",
+      "summary": "목적",
+      "headings": [
+        "Codex Excel High-Risk Pack",
+        "목적",
+        "구성 원칙",
+        "설치 순서",
+        "사용 순서"
+      ]
+    },
+    {
+      "path": "excel_vba/codex_excel_risk_pack/docs/ops/benchmark-notes-2026.md",
+      "title": "Benchmark Notes (2026)",
+      "summary": "목적",
+      "headings": [
+        "Benchmark Notes (2026)",
+        "목적",
+        "반영한 공식 Codex 문서",
+        "1. Custom instructions with AGENTS.md – Codex",
+        "2. Subagents – Codex"
+      ]
+    },
+    {
+      "path": "excel_vba/codex_excel_risk_pack/docs/ops/excel-runtime-runbook.md",
+      "title": "Excel Runtime Runbook",
+      "summary": "목적",
+      "headings": [
+        "Excel Runtime Runbook",
+        "목적",
+        "0. Precheck",
+        "1. Risk classify",
+        "2. Choose execution posture"
+      ]
+    },
+    {
+      "path": "excel_vba/codex_excel_risk_pack/docs/ops/prompt-examples.md",
+      "title": "Prompt Examples",
+      "summary": "1. Guarded serial write",
+      "headings": [
+        "Prompt Examples",
+        "1. Guarded serial write",
+        "2. Read-only preflight only",
+        "3. Python + VBA coexistence",
+        "4. Live workbook with possible unsaved changes"
+      ]
+    },
+    {
+      "path": "excel_vba/codex_excel_risk_pack/docs/ops/validation-checklist.md",
+      "title": "Validation Checklist",
+      "summary": "A. Risk classification",
+      "headings": [
+        "Validation Checklist",
+        "A. Risk classification",
+        "B. Safety gate",
+        "C. Implementation gate",
+        "D. Verification gate"
+      ]
+    },
+    {
+      "path": "excel_vba/docs/ops/benchmark-notes-2026.md",
+      "title": "Benchmark Notes 2026",
+      "summary": "Purpose",
+      "headings": [
+        "Benchmark Notes 2026",
+        "Purpose",
+        "Relevant Codex Guidance",
+        "AGENTS.md",
+        "Skills"
+      ]
+    },
+    {
+      "path": "excel_vba/docs/ops/excel-runtime-runbook.md",
+      "title": "Excel Runtime Runbook",
+      "summary": "Purpose",
+      "headings": [
+        "Excel Runtime Runbook",
+        "Purpose",
+        "0. Precheck",
+        "1. Risk Classification",
+        "2. Choose Execution Posture"
+      ]
+    },
+    {
+      "path": "excel_vba/docs/ops/prompt-examples.md",
+      "title": "Prompt Examples",
+      "summary": "1. Guarded serial write",
+      "headings": [
+        "Prompt Examples",
+        "1. Guarded serial write",
+        "2. Read-only preflight only",
+        "3. Python and VBA coexistence",
+        "4. Live workbook with possible unsaved changes"
+      ]
+    },
+    {
+      "path": "excel_vba/docs/ops/validation-checklist.md",
+      "title": "Validation Checklist",
+      "summary": "A. Risk Classification",
+      "headings": [
+        "Validation Checklist",
+        "A. Risk Classification",
+        "B. Safety Gate",
+        "C. Implementation Gate",
+        "D. Verification Gate"
       ]
     },
     {
       "path": "mstack-codex-package-1.1.0/source/README.md",
-      "title": "ccat — Claude Code Agent Teams CLI",
-      "summary": "Codex wheel install",
+      "title": "mstack",
+      "summary": "3-layer model",
       "headings": [
-        "ccat — Claude Code Agent Teams CLI",
-        "Codex wheel install",
-        "빠른 시작",
-        "프로젝트 폴더에서 실행 (언어 자동 감지)",
-        "언어 직접 지정"
+        "mstack",
+        "3-layer model",
+        "What this package contains",
+        "Recommended deployment",
+        "Direct install vs plugin install"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/core/_assets/docs/MSTACK_SKILL_GUIDE.md",
+      "title": "MStack Codex Skill 상세 가이드",
+      "summary": "개요",
+      "headings": [
+        "MStack Codex Skill 상세 가이드",
+        "개요",
+        "빠른 선택 가이드",
+        "전체 스킬 표",
+        "자주 쓰는 조합"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/dist-delivery/mstack-codex-portable-1.1.0/docs/INSTALL_CODEX.md",
+      "title": "MStack Codex Packaging",
+      "summary": "Deployment model",
+      "headings": [
+        "MStack Codex Packaging",
+        "Deployment model",
+        "What gets installed",
+        "Supported installation paths",
+        "1) Direct Codex skills install"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/dist-delivery/mstack-codex-portable-1.1.0/docs/MSTACK_SKILL_GUIDE.md",
+      "title": "MStack Codex Skill 상세 가이드",
+      "summary": "개요",
+      "headings": [
+        "MStack Codex Skill 상세 가이드",
+        "개요",
+        "빠른 선택 가이드",
+        "전체 스킬 표",
+        "자주 쓰는 조합"
+      ]
+    },
+    {
+      "path": "mstack-codex-package-1.1.0/source/dist-delivery/mstack-codex-portable-1.1.0/docs/README.md",
+      "title": "mstack",
+      "summary": "3-layer model",
+      "headings": [
+        "mstack",
+        "3-layer model",
+        "What this package contains",
+        "Recommended deployment",
+        "Direct install vs plugin install"
       ]
     },
     {
@@ -298,310 +689,44 @@
       "headings": [
         "tests/debug/"
       ]
-    },
-    {
-      "path": "source/README.md",
-      "title": "ccat — Claude Code Agent Teams CLI",
-      "summary": "Codex wheel install",
-      "headings": [
-        "ccat — Claude Code Agent Teams CLI",
-        "Codex wheel install",
-        "빠른 시작",
-        "프로젝트 폴더에서 실행 (언어 자동 감지)",
-        "언어 직접 지정"
-      ]
-    },
-    {
-      "path": "source/docs/ARCHITECTURE.md",
-      "title": "System Architecture — mstack (ccat)",
-      "summary": "High-Level Overview",
-      "headings": [
-        "System Architecture — mstack (ccat)",
-        "High-Level Overview",
-        "Module Dependency Graph",
-        "Core Module Details",
-        "types.py — 공통 데이터 타입"
-      ]
-    },
-    {
-      "path": "source/docs/CHANGELOG.md",
-      "title": "Changelog — mstack (ccat)",
-      "summary": "[1.1.0] — 2026-03-22",
-      "headings": [
-        "Changelog — mstack (ccat)",
-        "[1.1.0] — 2026-03-22",
-        "Overview",
-        "v1.4 — `test(v1.4): core/ 100% coverage — all 13 modules at 0 miss`",
-        "Added"
-      ]
-    },
-    {
-      "path": "source/docs/getting-started.md",
-      "title": "mstack 시작하기 (Getting Started)",
-      "summary": "mstack이 뭔가요?",
-      "headings": [
-        "mstack 시작하기 (Getting Started)",
-        "mstack이 뭔가요?",
-        "설치",
-        "요구사항 확인",
-        "Python 3.12.4  ← 3.11 이상이면 OK"
-      ]
-    },
-    {
-      "path": "source/docs/LAYOUT.md",
-      "title": "Project Layout — mstack (ccat)",
-      "summary": "Directory Tree",
-      "headings": [
-        "Project Layout — mstack (ccat)",
-        "Directory Tree",
-        "File Count Summary",
-        "Key Configuration Files",
-        "Naming Conventions"
-      ]
-    },
-    {
-      "path": "source/docs/README.md",
-      "title": "mstack (ccat) — Claude Code Agent Teams CLI",
-      "summary": "Overview",
-      "headings": [
-        "mstack (ccat) — Claude Code Agent Teams CLI",
-        "Overview",
-        "Features",
-        "Quick Start",
-        "1. 프로젝트 초기화"
-      ]
-    },
-    {
-      "path": "source/docs/user-guide.md",
-      "title": "mstack 사용자 가이드 (v1.4)",
-      "summary": "목차",
-      "headings": [
-        "mstack 사용자 가이드 (v1.4)",
-        "목차",
-        "1. mstack이 뭔가요?",
-        "한 줄 요약",
-        "왜 필요한가요?"
-      ]
-    },
-    {
-      "path": "source/tests/debug/README.md",
-      "title": "tests/debug/",
-      "summary": "실험용·디버그용 테스트 디렉토리.",
-      "headings": [
-        "tests/debug/"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/README.md",
-      "title": "Smoke Doc App",
-      "summary": "Existing Notes",
-      "headings": [
-        "Smoke Doc App",
-        "Existing Notes"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/usage.md",
-      "title": "Notes",
-      "summary": "Usage",
-      "headings": [
-        "Notes",
-        "Usage"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/ARCHITECTURE.md",
-      "title": "Observed Architecture For smoke-doc-app",
-      "summary": "Architecture Rule",
-      "headings": [
-        "Observed Architecture For smoke-doc-app",
-        "Architecture Rule",
-        "Architecture Diagram",
-        "Observed Architecture Notes",
-        "Manifest Surface"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/CHANGELOG.md",
-      "title": "Observed Changelog For smoke-doc-app",
-      "summary": "Changelog Rule",
-      "headings": [
-        "Observed Changelog For smoke-doc-app",
-        "Changelog Rule",
-        "Activity Diagram",
-        "Recent Commits",
-        "Current Working Tree Signals"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/GUIDE.md",
-      "title": "Working Guide For smoke-doc-app",
-      "summary": "Guide Rule",
-      "headings": [
-        "Working Guide For smoke-doc-app",
-        "Guide Rule",
-        "Guide Diagram",
-        "Commands You Can Run",
-        "Script Entry Points"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/LAYOUT.md",
-      "title": "Repository Layout For smoke-doc-app",
-      "summary": "Layout Rule",
-      "headings": [
-        "Repository Layout For smoke-doc-app",
-        "Layout Rule",
-        "Layout Diagram",
-        "Tree Snapshot",
-        "Top-Level Entry Counts"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/PLAN.md",
-      "title": "Current Plan For smoke-doc-app",
-      "summary": "Planning Rule",
-      "headings": [
-        "Current Plan For smoke-doc-app",
-        "Planning Rule",
-        "Plan Diagram",
-        "Evidence-Backed Next Actions",
-        "TODO And FIXME Evidence"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-parallel-test-20260330/docs/project-docs/README.md",
-      "title": "smoke-doc-app",
-      "summary": "Purpose",
-      "headings": [
-        "smoke-doc-app",
-        "Purpose",
-        "Evidence Rule",
-        "Overview Diagram",
-        "Observations"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/README.md",
-      "title": "Smoke Doc App",
-      "summary": "Existing Notes",
-      "headings": [
-        "Smoke Doc App",
-        "Existing Notes"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/usage.md",
-      "title": "Notes",
-      "summary": "Usage",
-      "headings": [
-        "Notes",
-        "Usage"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/ARCHITECTURE.md",
-      "title": "Observed Architecture For smoke-doc-app",
-      "summary": "Architecture Rule",
-      "headings": [
-        "Observed Architecture For smoke-doc-app",
-        "Architecture Rule",
-        "Architecture Diagram",
-        "Observed Architecture Notes",
-        "Manifest Surface"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/CHANGELOG.md",
-      "title": "Observed Changelog For smoke-doc-app",
-      "summary": "Changelog Rule",
-      "headings": [
-        "Observed Changelog For smoke-doc-app",
-        "Changelog Rule",
-        "Activity Diagram",
-        "Recent Commits",
-        "Current Working Tree Signals"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/GUIDE.md",
-      "title": "Working Guide For smoke-doc-app",
-      "summary": "Guide Rule",
-      "headings": [
-        "Working Guide For smoke-doc-app",
-        "Guide Rule",
-        "Guide Diagram",
-        "Commands You Can Run",
-        "Script Entry Points"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/LAYOUT.md",
-      "title": "Repository Layout For smoke-doc-app",
-      "summary": "Layout Rule",
-      "headings": [
-        "Repository Layout For smoke-doc-app",
-        "Layout Rule",
-        "Layout Diagram",
-        "Tree Snapshot",
-        "Top-Level Entry Counts"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/PLAN.md",
-      "title": "Current Plan For smoke-doc-app",
-      "summary": "Planning Rule",
-      "headings": [
-        "Current Plan For smoke-doc-app",
-        "Planning Rule",
-        "Plan Diagram",
-        "Evidence-Backed Next Actions",
-        "TODO And FIXME Evidence"
-      ]
-    },
-    {
-      "path": "tmp-doc-orchestrator-smoke-20260329100642/docs/project-docs/README.md",
-      "title": "smoke-doc-app",
-      "summary": "Purpose",
-      "headings": [
-        "smoke-doc-app",
-        "Purpose",
-        "Evidence Rule",
-        "Overview Diagram",
-        "Observations"
-      ]
     }
   ],
   "source_summary": {
-    "total_files": 385,
+    "total_files": 1034,
     "counts_by_extension": {
-      ".py": 142,
-      ".md": 137,
-      ".yaml": 38,
-      ".json": 19,
-      ".disabled": 18,
-      ".ps1": 9,
-      ".txt": 6,
+      ".md": 441,
+      ".py": 157,
+      ".yaml": 147,
+      ".json": 114,
+      "<no_ext>": 42,
+      ".sample": 28,
+      ".txt": 21,
+      ".toml": 20,
+      ".ps1": 14,
+      ".disabled": 14,
+      ".zip": 8,
+      ".png": 7,
+      ".whl": 7,
+      ".docx": 4,
       ".svg": 4,
-      ".png": 4,
-      ".docx": 2,
-      "<no_ext>": 2,
-      ".toml": 2,
-      ".whl": 2
+      ".csv": 2,
+      ".log": 2,
+      ".example": 1,
+      ".sh": 1
     },
     "top_level_entries": {
-      "source": 134,
-      "mstack-codex-package-1.1.0": 128,
-      "excel-style-skill-package": 53,
-      "excel_vba": 18,
-      "tmp-doc-orchestrator-parallel-test-20260330": 13,
-      "tmp-doc-orchestrator-smoke-20260329100642": 12,
+      "mstack-codex-package-1.1.0": 288,
+      "excel_vba": 85,
+      "excel-style-skill-package": 75,
+      "codex-ofco-skill-pack": 23,
+      "codex-multi-agent-pack": 19,
+      "codex_excel_risk_pack": 15,
       "plugins": 11,
+      "codex-skill-update-pack": 10,
       "pdo-skill": 10,
-      "Codex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트.docx": 1,
-      "codex_skill_plugin_mutiagent_guidebook.md": 1,
-      "PACKAGE_CONTENTS.txt": 1,
-      "~$dex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트.docx": 1
+      "codex-openspace-merge-pack": 9,
+      "codex": 8,
+      "design-upgrade-loop-package": 7
     }
   },
   "layout_tree": [
@@ -609,89 +734,141 @@
     "|-- .agents/",
     "|   \\-- plugins/",
     "|       \\-- marketplace.json",
+    "|-- codex/",
+    "|   |-- word-style-package-20260403/",
+    "|   |   |-- .agents/",
+    "|   |   \\-- README.md",
+    "|   \\-- word-style-package-20260403.zip",
+    "|-- codex-multi-agent-pack/",
+    "|   \\-- codex-multi-agent-pack/",
+    "|       |-- .agents/",
+    "|       \\-- AGENTS.md",
+    "|-- codex-ofco-skill-pack/",
+    "|   \\-- codex-ofco-skill-pack/",
+    "|       |-- .codex/",
+    "|       |-- AGENTS.md",
+    "|       \\-- README.md",
+    "|-- codex-openspace-merge-pack/",
+    "|   |-- .agents/",
+    "|   |   \\-- skills/",
+    "|   |-- .codex/",
+    "|   |   \\-- config.toml.example",
+    "|   |-- automation/",
+    "|   |   |-- templates/",
+    "|   |   |-- one_click_app.py",
+    "|   |   |-- requirements.txt",
+    "|   |   |-- run_full_workflow.py",
+    "|   |   \\-- setup_merge.sh",
+    "|   |-- AGENTS.merge-snippet.md",
+    "|   \\-- README.md",
+    "|-- codex-skill-update-pack/",
+    "|   |-- .agents/",
+    "|   |   \\-- skills/",
+    "|   |-- .codex/",
+    "|   |   \\-- agents/",
+    "|   \\-- README.md",
+    "|-- codex_excel_risk_pack/",
+    "|   \\-- codex_excel_risk_pack/",
+    "|       |-- .agents/",
+    "|       |-- .codex/",
+    "|       |-- docs/",
+    "|       |-- AGENTS.md",
+    "|       |-- heartbeat.md",
+    "|       \\-- README-CODEX-EXCEL-RISK-PACK.md",
+    "|-- design-upgrade-loop-package/",
+    "|   \\-- design-upgrade-loop-package/",
+    "|       |-- .agents/",
+    "|       \\-- AGENTS.md",
+    "|-- docs/",
+    "|   \\-- workspace-notes/",
+    "|       |-- 20260330_HVDC_TR_통합_운영_가이드_v3.5_AGI_KR (1).docx",
+    "|       |-- agitr.md",
+    "|       |-- agitr_change_report.md",
+    "|       |-- Codex 스킬·플러그인·멀티 에이전트 제작 가이드와 참고 리포트.docx",
+    "|       |-- codex_skill_plugin_mutiagent_guidebook.md",
+    "|       \\-- README.md",
     "|-- excel-style-skill-package/",
     "|   |-- .agents/",
     "|   |   \\-- skills/",
     "|   |-- .system/",
     "|   |   \\-- skill-creator/",
     "|   |-- excel-professional-formatting/",
+    "|   |   |-- .agents/",
     "|   |   |-- agents/",
+    "|   |   |-- plugins/",
     "|   |   |-- references/",
+    "|   |   |-- scripts/",
+    "|   |   |-- .gitignore",
+    "|   |   |-- install_excel_professional_formatting_plugin.ps1",
     "|   |   |-- install_excel_professional_formatting_skill.ps1",
-    "|   |   \\-- SKILL.md.disabled",
+    "|   |   |-- README.md",
+    "|   |   |-- SKILL.md",
+    "|   |   \\-- VALIDATION.md",
     "|   |-- excel-vba/",
     "|   |   |-- agents/",
     "|   |   |-- references/",
     "|   |   |-- install_excel_vba_skill.ps1",
     "|   |   \\-- SKILL.md.disabled",
     "|   |-- spreadsheet/",
-    "|   |   |-- agents/",
-    "|   |   |-- assets/",
-    "|   |   |-- references/",
-    "|   |   |-- LICENSE.txt",
-    "|   |   \\-- SKILL.md.disabled",
-    "|   \\-- install_excel_style_skills.ps1",
-    "|-- excel_vba/",
-    "|   |-- excel-vba/",
-    "|   |   |-- agents/",
-    "|   |   |-- references/",
-    "|   |   |-- scripts/",
-    "|   |   \\-- SKILL.md.disabled",
-    "|   |-- .gitignore",
-    "|   |-- install_excel_vba_skill.ps1",
-    "|   \\-- README.md",
-    "|-- mstack-codex-package-1.1.0/",
-    "|   |-- source/",
-    "|   |   |-- core/",
-    "|   |   |-- presets/",
-    "|   |   |-- scripts/",
-    "|   |   |-- skills/",
-    "|   |   |-- skills-codex/",
-    "|   |   |-- tests/",
-    "|   |   |-- .gitignore",
-    "|   |   |-- AGENTS.md",
-    "|   |   |-- cost.py",
-    "|   |   |-- INSTALL_CODEX.md",
-    "|   |   |-- mstack.py",
-    "|   |   |-- pyproject.toml",
-    "|   |   \\-- README.md",
-    "|   |-- wheel/",
-    "|   |   \\-- mstack-1.1.0-py3-none-any.whl",
-    "|   \\-- PACKAGE_CONTENTS.txt",
-    "|-- pdo-skill/",
-    "|   |-- agents/",
-    "|   |   \\-- openai.yaml",
-    "|   |-- references/",
-    "|   |   |-- evidence-rule.md",
-    "|   |   |-- file-contract.md",
-    "|   |   |-- mermaid-guidelines.md",
-    "|   |   \\-- workflow.md",
-    "|   |-- scripts/",
-    "|   |   |-- doc_orchestrator_lib.py",
-    "|   |   |-- patch_docs.py",
-    "|   |   |-- project_snapshot.py",
-    "|   |   \\-- scaffold_docs.py",
-    "|   \\-- SKILL.md",
-    "|-- plugins/",
-    "|   \\-- project-doc-orchestrator/",
-    "|       |-- .codex-plugin/",
-    "|       \\-- skills/",
-    "|-- source/",
-    "|   |-- core/",
-    "|   |   |-- _assets/",
-    "|   |   |-- __init__.py",
-    "|   |   |-- assets.py",
-    "|   |   |-- claude_md.py",
-    "|   |   |-- config.py",
-    "|   |   |-- cost.py",
-    "|   |   |-- dashboard.py",
-    "|   |   |-- doctor.py"
+    "|   |   |-- agents/"
   ],
   "git": {
-    "is_git_repo": false,
-    "branch": null,
-    "recent_commits": [],
-    "changed_files": []
+    "is_git_repo": true,
+    "branch": "main",
+    "recent_commits": [
+      {
+        "hash": "ffb8f7c",
+        "date": "2026-04-02",
+        "subject": "Vendor archived temp doc repos"
+      },
+      {
+        "hash": "7a2724a",
+        "date": "2026-04-02",
+        "subject": "Upload full SKILL workspace"
+      }
+    ],
+    "changed_files": [
+      " M docs/project-docs/ARCHITECTURE.md",
+      " M docs/project-docs/CHANGELOG.md",
+      " M docs/project-docs/GUIDE.md",
+      " M docs/project-docs/LAYOUT.md",
+      " M docs/project-docs/PLAN.md",
+      " M docs/project-docs/README.md",
+      " M docs/project-docs/project_snapshot.json",
+      " M excel_vba/README.md",
+      " M excel_vba/VALIDATION.md",
+      " M excel_vba/excel-vba/SKILL.md",
+      " M excel_vba/excel-vba/agents/openai.yaml",
+      " D \"excel_vba/excel-vba/references/excel_vba_handoff_\\354\\232\\264\\354\\230\\201\\354\\262\\264\\355\\201\\254\\353\\246\\254\\354\\212\\244\\355\\212\\270_20260401.md\"",
+      " D excel_vba/excel-vba/references/excel_vba_patch.md",
+      " M excel_vba/excel-vba/references/process-map.md",
+      " M excel_vba/excel-vba/references/request-levels.md",
+      " M excel_vba/plugins/excel-vba/skills/excel-vba/SKILL.md",
+      " M excel_vba/plugins/excel-vba/skills/excel-vba/agents/openai.yaml",
+      " M excel_vba/plugins/excel-vba/skills/excel-vba/references/process-map.md",
+      " M excel_vba/plugins/excel-vba/skills/excel-vba/references/request-levels.md",
+      " M excel_vba/scripts/run_excel_vba_validation.ps1",
+      " M excel_vba/scripts/templates/validation-summary.json",
+      " M excel_vba/scripts/templates/validation-summary.md",
+      " M pagewise-translation-patch-skill/.agents/skills/pagewise-translation-patch/SKILL.md",
+      " M pagewise-translation-patch-skill/.agents/skills/pagewise-translation-patch/agents/openai.yaml",
+      " M pagewise-translation-patch-skill/.agents/skills/pagewise-translation-patch/assets/review-request-template.md",
+      " M pagewise-translation-patch-skill/.agents/skills/pagewise-translation-patch/references/examples.md",
+      " M pagewise-translation-patch-skill/.agents/skills/pagewise-translation-patch/references/output-contract.md",
+      " M pdo-skill/scripts/__pycache__/doc_orchestrator_lib.cpython-311.pyc",
+      " M pdo-skill/scripts/doc_orchestrator_lib.py",
+      " M pdo-skill/scripts/patch_docs.py",
+      " M pdo-skill/scripts/scaffold_docs.py",
+      " M plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py",
+      " M plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py",
+      " M plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py",
+      "?? assumption_register_diff.md",
+      "?? codex-ofco-skill-pack.zip",
+      "?? codex-ofco-skill-pack/",
+      "?? codex/",
+      "?? codex_excel_risk_pack.zip",
+      "?? codex_excel_risk_pack/"
+    ]
   },
   "todos": [
     {
@@ -765,69 +942,69 @@
       "text": "print(\"1. Edit SKILL.md to complete the TODO items and update the description\")"
     },
     {
-      "path": "mstack-codex-package-1.1.0/source/core/pipeline_adapter.py",
-      "line": 25,
-      "text": "\"bugfix\": (\"bug\", \"bugfix\", \"fix crash\", \"failure\", \"error\", \"crash\", \"regression\", \"버그\", \"장애\", \"에러\"),"
-    },
-    {
-      "path": "mstack-codex-package-1.1.0/source/core/pipeline_recipes.py",
-      "line": 21,
-      "text": "\"fix bug\","
-    },
-    {
-      "path": "mstack-codex-package-1.1.0/source/core/pipeline_recipes.py",
-      "line": 25,
-      "text": "\"parser bug\","
-    },
-    {
-      "path": "mstack-codex-package-1.1.0/source/core/_assets/skills/investigate/SKILL.md",
-      "line": 6,
-      "text": "이 스킬은 investigate, 버그, bug, debug, 조사, 디버깅, error, crash, 장애, incident,"
-    },
-    {
-      "path": "mstack-codex-package-1.1.0/source/core/_assets/skills/investigate/SKILL.md",
-      "line": 82,
-      "text": "Bug: [한줄 설명]"
-    },
-    {
-      "path": "mstack-codex-package-1.1.0/source/core/_assets/skills-codex/investigate/SKILL.md",
+      "path": "excel-style-skill-package/excel-professional-formatting/plugins/excel-professional-formatting/.codex-plugin/plugin.json",
       "line": 5,
-      "text": "bug, form hypotheses, gather evidence, and identify the root cause before"
+      "text": "\"license\": \"[TODO: license]\","
+    },
+    {
+      "path": "excel-style-skill-package/excel-professional-formatting/plugins/excel-professional-formatting/.codex-plugin/plugin.json",
+      "line": 10,
+      "text": "\"privacyPolicyURL\": \"[TODO: privacy-policy-url]\","
+    },
+    {
+      "path": "excel-style-skill-package/excel-professional-formatting/plugins/excel-professional-formatting/.codex-plugin/plugin.json",
+      "line": 11,
+      "text": "\"termsOfServiceURL\": \"[TODO: terms-of-service-url]\""
+    },
+    {
+      "path": "excel_vba/plugins/excel-vba/.codex-plugin/plugin.json",
+      "line": 5,
+      "text": "\"license\": \"[TODO: license]\","
+    },
+    {
+      "path": "excel_vba/plugins/excel-vba/.codex-plugin/plugin.json",
+      "line": 10,
+      "text": "\"privacyPolicyURL\": \"[TODO: privacy-policy-url]\","
+    },
+    {
+      "path": "excel_vba/plugins/excel-vba/.codex-plugin/plugin.json",
+      "line": 11,
+      "text": "\"termsOfServiceURL\": \"[TODO: terms-of-service-url]\""
     }
   ],
   "commands": {
     "from_manifests": [
-      "npm run docs",
-      "npm run start",
-      "python -m mstack"
+      "python -m mstack",
+      "python -m pip install -r requirements.txt"
     ],
     "from_scripts": [
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/excel-professional-formatting/scripts/run_excel_professional_formatting_validation.ps1",
       "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1",
-      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1",
-      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1",
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/plugins/excel-vba/skills/excel-vba/scripts/build-reopen-smoketest.ps1",
+      "powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/scripts/run_excel_vba_validation.ps1",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/codex-skill-update-pack/.agents/skills/skill-update/scripts/validate_outputs.py",
+      "python C:/Users/SAMSUNG/Downloads/skill/design-upgrade-loop-package/design-upgrade-loop-package/.agents/skills/design-upgrade-loop/scripts/validate_design_scorecard.py",
       "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py",
       "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py",
       "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py",
       "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py",
       "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/init_skill.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/doc_orchestrator_lib.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/patch_docs.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/project_snapshot.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/pdo-skill/scripts/scaffold_docs.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/doc_orchestrator_lib.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/patch_docs.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/project_snapshot.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/plugins/project-doc-orchestrator/skills/project-doc-orchestrator/scripts/scaffold_docs.py",
-      "python C:/Users/SAMSUNG/Downloads/skill/source/scripts/codex_runtime_smoke.py"
+      "python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py"
     ]
   },
   "observations": [
-    "Detected 4 manifest/config file(s).",
-    "Inspected 19 runnable script file(s).",
-    "Inspected 27 existing documentation file(s).",
-    "Git metadata was not available.",
+    "Detected 2 manifest/config file(s).",
+    "Inspected 30 runnable script file(s).",
+    "Inspected 31 existing documentation file(s).",
+    "Git repository detected on branch main with 2 recent commit(s).",
     "Found 20 TODO/FIXME-style marker(s) in inspected text files."
   ]
 }

@@ -4,6 +4,10 @@ This repository packages the `excel-vba` Codex skill and its validation/docs hel
 
 ## What is here
 - `excel-vba/`: the skill source tree
+- `excel-xlsm-contract-ops/`: the high-risk companion skill for existing `.xlsm`, reinjection, COM, and live-workbook runs
+- `AGENTS.md` and `heartbeat.md`: repo-local guardrails and runtime heartbeat rules
+- `.codex/agents/`: manager, guardrail, implementer, and verifier agent definitions for high-risk Excel work
+- `docs/ops/`: operational checklist, runbook, validation checklist, prompt examples, and benchmark notes
 - `install_excel_vba_skill.ps1`: direct-install helper for a local Codex skills folder
 - `scripts/run_excel_vba_validation.ps1`: parallel validation runner that writes Markdown and JSON summaries
 - `scripts/templates/validation-summary.md` and `scripts/templates/validation-summary.json`: report templates for the validation summary shape
@@ -31,8 +35,9 @@ Run the repository validation before publishing or after a non-trivial skill/pac
 .\scripts\run_excel_vba_validation.ps1
 ```
 
-The runner executes four lanes in parallel:
+The runner executes five lanes in parallel:
 - skill structure
+- contract-pack checks for `excel-xlsm-contract-ops`, `AGENTS.md`, `heartbeat.md`, `.codex/agents`, and `docs/ops`
 - plugin/package structure
 - install/registration checks
 - QA contract checks

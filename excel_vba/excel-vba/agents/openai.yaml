@@ -1,7 +1,7 @@
 interface:
   display_name: "Excel VBA Automation"
-  short_description: "VBA-first Excel automation with explicit parallel lanes and patch-in-place safeguards"
-  default_prompt: "Use $excel-vba to design VBA-first Excel automation, preserve existing workbook structure by patching in place, and split explicit parallel work into manager, guardrail, implementation, and QA lanes. Add Python only when it constructs workbook assets for the VBA workflow."
+  short_description: "VBA-first Excel automation behind the contract-ops risk gate"
+  default_prompt: "Use $excel-vba only after $excel-xlsm-contract-ops classifies the workbook, then patch workbook logic safely in place, preserve contract-sensitive surfaces, and validate compile, bindings, save-close-reopen, and workbook-qualified macro runs."
 
 policy:
   allow_implicit_invocation: true

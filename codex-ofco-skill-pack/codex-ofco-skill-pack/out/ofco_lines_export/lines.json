@@ -1,0 +1,36 @@
+{
+  "lines": [
+    {
+      "invoice_no": "INV-61871",
+      "line_no": 1,
+      "tariff_id": "6.1",
+      "description": "Waste Handling First Domestic Skip 2025-07-09 ~ 2025-07-13 (5 Days)",
+      "unit1": 1.0,
+      "unit2": 1.0,
+      "unit3": 1.0,
+      "rate": 700.0,
+      "amount_excl_tax": 700.0,
+      "tax_rate_pct": 0.0,
+      "tax_amount": 0.0,
+      "total_incl_tax": 700.0,
+      "calc_check": true,
+      "evidence": "p1,row1"
+    },
+    {
+      "invoice_no": "INV01250701342",
+      "line_no": 1,
+      "tariff_id": "802.3A",
+      "description": "Labour - Additional man hour - Normal (Other Cargo)",
+      "unit1": 1.0,
+      "unit2": 3.0,
+      "unit3": 3.0,
+      "rate": 45.0,
+      "amount_excl_tax": 405.0,
+      "tax_rate_pct": 0.0,
+      "tax_amount": 0.0,
+      "total_incl_tax": 405.0,
+      "calc_check": true,
+      "evidence": "p1,row2"
+    }
+  ]
+}

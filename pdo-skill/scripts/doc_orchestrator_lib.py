@@ -72,6 +72,15 @@ SNAPSHOT_ARTIFACT_RELATIVE_PATHS = {
     "project_snapshot.json",
     f"{MANAGED_DOCS_RELATIVE_ROOT}/project_snapshot.json",
 }
+EVIDENCE_EXCLUDED_TOP_LEVEL_DIRS = {
+    "_holding-root",
+}
+EVIDENCE_EXCLUDED_PATH_PARTS = {
+    "_holding",
+    "_holding-root",
+    "artifacts",
+    "validation-reports",
+}
 
 MANIFEST_NAMES = {
     "package.json",
@@ -150,7 +159,38 @@ def is_generated_output(relative_path: str) -> bool:
     normalized = relative_path.replace("\\", "/").strip("/")
     if normalized in SNAPSHOT_ARTIFACT_RELATIVE_PATHS:
         return True
-    return normalized.startswith(f"{MANAGED_DOCS_RELATIVE_ROOT}/")
+    return normalized == MANAGED_DOCS_RELATIVE_ROOT or normalized.startswith(f"{MANAGED_DOCS_RELATIVE_ROOT}/")
+
+
+def is_excluded_evidence_path(relative_path: str) -> bool:
+    normalized = relative_path.replace("\\", "/").strip("/")
+    parts = [part for part in normalized.split("/") if part]
+    if not parts:
+        return False
+    if parts[0] in EVIDENCE_EXCLUDED_TOP_LEVEL_DIRS:
+        return True
+    return any(part in EVIDENCE_EXCLUDED_PATH_PARTS for part in parts)
+
+
+def should_skip_evidence_path(relative_path: str) -> bool:
+    return is_generated_output(relative_path) or is_excluded_evidence_path(relative_path)
+
+
+def has_visible_layout_content(path: Path, root: Path) -> bool:
+    if not path.is_dir():
+        return not should_skip_evidence_path(rel_path(path, root))
+    for current_root, dir_names, file_names in os.walk(path):
+        dir_names[:] = [
+            name
+            for name in dir_names
+            if name not in IGNORE_DIRS
+            and not should_skip_evidence_path(rel_path(Path(current_root) / name, root))
+        ]
+        current = Path(current_root)
+        for file_name in file_names:
+            if not should_skip_evidence_path(rel_path(current / file_name, root)):
+                return True
+    return False
 
 
 def summarize_package_json(path: Path, text: str) -> dict[str, Any]:
@@ -284,6 +324,24 @@ def summarize_doc(path: Path, text: str) -> dict[str, Any]:
     }
 
 
+def detect_root_readme_name(root: Path) -> str | None:
+    for candidate in ("README.md", "README.MD", "readme.md"):
+        path = root / candidate
+        if not path.exists():
+            continue
+        try:
+            text = safe_read_text(path)
+        except OSError:
+            continue
+        for line in text.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("#"):
+                heading = stripped.lstrip("#").strip()
+                if heading:
+                    return heading
+    return None
+
+
 def build_layout_tree(root: Path, max_depth: int = 3, max_entries: int = 80) -> list[str]:
     lines = [f"{root.name}/"]
     count = 0
@@ -296,6 +354,8 @@ def build_layout_tree(root: Path, max_depth: int = 3, max_entries: int = 80) -> 
             entry
             for entry in sorted(current.iterdir(), key=lambda item: (not item.is_dir(), item.name.lower()))
             if entry.name not in IGNORE_DIRS
+            and not should_skip_evidence_path(rel_path(entry, root))
+            and (not entry.is_dir() or has_visible_layout_content(entry, root))
         ]
         for index, entry in enumerate(entries):
             if count >= max_entries:
@@ -419,10 +479,10 @@ def build_snapshot(project_root: str | Path) -> dict[str, Any]:
     for path in files:
         counts[path.suffix.lower() or "<no_ext>"] += 1
         relative = rel_path(path, root)
+        if should_skip_evidence_path(relative):
+            continue
         top_level = relative.split("/", 1)[0]
         key_dirs[top_level] += 1
-        if is_generated_output(relative):
-            continue
         name = path.name
         suffix = path.suffix.lower()
         is_manifest = name in MANIFEST_NAMES
@@ -452,7 +512,11 @@ def build_snapshot(project_root: str | Path) -> dict[str, Any]:
             docs.append(info)
 
     git_info = gather_git_info(root)
-    evidence_files = [path for path in files if not is_generated_output(rel_path(path, root))]
+    evidence_files = [
+        path
+        for path in files
+        if not should_skip_evidence_path(rel_path(path, root))
+    ]
     todos = gather_todos(evidence_files, root)
     manifest_commands = []
     for manifest in manifests:
@@ -462,7 +526,13 @@ def build_snapshot(project_root: str | Path) -> dict[str, Any]:
         script_commands.extend(script.get("commands", []))
 
     project_name = root.name
+    root_readme_name = detect_root_readme_name(root)
+    if root_readme_name:
+        project_name = root_readme_name
     for manifest in manifests:
+        manifest_path = manifest.get("path", "")
+        if "/" in manifest_path:
+            continue
         if manifest.get("name"):
             project_name = manifest["name"]
             break
@@ -511,6 +581,30 @@ def build_snapshot(project_root: str | Path) -> dict[str, Any]:
             "from_scripts": sorted(dict.fromkeys(script_commands))[:20],
         },
         "observations": observations,
+    }
+
+
+def evaluate_parallel_execution(
+    *,
+    parallel_validated: bool,
+    require_parallel: bool,
+) -> dict[str, Any]:
+    if parallel_validated:
+        return {
+            "execution_status": "PARALLEL_VALIDATED",
+            "execution_detail": "Caller validated lane-based parallel execution for this run.",
+        }
+    if require_parallel:
+        raise RuntimeError(
+            "Parallel execution was required but not validated. "
+            "Re-run with --parallel-validated only after the lane-based run is confirmed."
+        )
+    return {
+        "execution_status": "PARALLEL_DEGRADED",
+        "execution_detail": (
+            "Parallel lane execution was not validated by the caller. "
+            "This result should be treated as a degraded sequential fallback."
+        ),
     }
 
 

@@ -1,0 +1,15 @@
+{
+  "mapped_lines": [
+    {
+      "description": "SAFEEN INV-42727 – Channel Crossing – Rot# 2503123133",
+      "tariff_id": "6.6",
+      "cost_main": "PORT HANDLING",
+      "cost_center_a": "PORT HANDLING CHARGE",
+      "cost_center_b": "CHANNEL TRANSIT CHARGES",
+      "price_center": "CHANNEL TRANSIT CHARGES",
+      "cost_item_code": "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT",
+      "qty_field": "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT_QTY",
+      "amount_field": "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT_AMOUNT"
+    }
+  ]
+}

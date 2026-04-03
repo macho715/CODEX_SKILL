@@ -1,0 +1,125 @@
+{
+  "request": {
+    "mode": "update",
+    "target_skill": "excel-vba",
+    "repo_root": "c:\\Users\\SAMSUNG\\Downloads\\skill\\excel_vba",
+    "intent": "Refresh and verify the excel-vba skill package against current Codex documentation and local packaging rules.",
+    "internet_allowed": true,
+    "allow_destructive": false,
+    "emit_optional_agents": false,
+    "notes": "Review the excel-vba package and its integrated high-risk companion assets without destructive changes."
+  },
+  "inventory_summary": {
+    "skill_count": 29,
+    "scanned_source_count": 3
+  },
+  "exact_matches": [
+    {
+      "path": "C:\\Users\\SAMSUNG\\.codex\\skills\\excel-vba",
+      "folder_name": "excel-vba",
+      "name": "excel-vba",
+      "description": "Design, generate, review, and QA Excel automation with VBA as the default implementation and Python only when it constructs workbook assets for VBA-linked sheets or files. Use when turning manual Excel work into repeatable automation, writing or fixing .xlsm or .xlsb macros, building workbook or worksheet event code, checking Python-generated workbook structures against VBA, or coordinating explicit parallel work across manager, guardrail, implementation, and QA lanes. Always run through the `excel-xlsm-contract-ops` risk gate first so contract-sensitive workbook work is classified and validated before code ships.",
+      "scripts": [
+        "scripts\\build-reopen-smoketest.ps1"
+      ],
+      "references": [
+        "references\\conflict-checklist.md",
+        "references\\default-templates.md",
+        "references\\formatting-handoff.md",
+        "references\\handoff-operational-checklist.md",
+        "references\\official-docs.md",
+        "references\\output-contract.md",
+        "references\\parallel-agent-workflow.md",
+        "references\\process-map.md",
+        "references\\python-review-workflow.md",
+        "references\\qa-and-operations.md",
+        "references\\request-levels.md",
+        "references\\role-core.md",
+        "references\\vba-review-workflow.md",
+        "references\\windows-com-and-unicode.md"
+      ],
+      "examples": [
+        "examples\\request.example.md"
+      ]
+    }
+  ],
+  "similar_matches": [
+    {
+      "path": "C:\\Users\\SAMSUNG\\.codex\\skills\\excel-professional-formatting",
+      "folder_name": "excel-professional-formatting",
+      "name": "excel-professional-formatting",
+      "description": "Apply a safe Excel formatting pass to workbook copies without changing workbook logic. Use when the request is about styling, readability, accessibility, print layout, or report polish and workbook behavior must stay intact. Start through the `excel-xlsm-contract-ops` risk gate first, then run a sidecar-first workflow, escalate to `excel-vba` for any structure-sensitive change, and use explicit parallel lanes only when the user asks for delegated or parallel execution.",
+      "scripts": [],
+      "references": [
+        "references\\operational-checklist.md",
+        "references\\parallel-agent-workflow.md",
+        "references\\promotion-and-rollback.md",
+        "references\\sidecar-formatting-pass.md",
+        "references\\validation-checklist.md"
+      ],
+      "examples": []
+    },
+    {
+      "path": "C:\\Users\\SAMSUNG\\.codex\\skills\\excel-xlsm-contract-ops",
+      "folder_name": "excel-xlsm-contract-ops",
+      "name": "excel-xlsm-contract-ops",
+      "description": "Guard high-risk Excel contract work involving existing `.xlsm` files, Python and VBA mixed mutation, COM automation, VBA reinjection, workbook-qualified `Application.Run`, non-ASCII paths or captions, and live workbook state with a serial single-writer workflow. Use this as the mandatory first risk-gate stage whenever `excel-vba` or `excel-professional-formatting` is used on a workbook.",
+      "scripts": [],
+      "references": [
+        "references\\decision-tree.md",
+        "references\\output-contract.md"
+      ],
+      "examples": [
+        "examples\\request.example.md"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "type": "update-existing",
+      "reason": "Exact existing skill found for 'excel-vba'. Update in place unless approval requires a fork."
+    }
+  ],
+  "parallel_plan": {
+    "mode": "parallel-first",
+    "lanes": [
+      {
+        "lane": "A",
+        "name": "inventory-scout",
+        "goal": "discover skills, AGENTS.md, scripts, overlaps"
+      },
+      {
+        "lane": "B",
+        "name": "official-doc-scout",
+        "goal": "benchmark against latest official docs"
+      },
+      {
+        "lane": "C",
+        "name": "author-worker",
+        "goal": "author or patch the target skill"
+      },
+      {
+        "lane": "D",
+        "name": "verifier",
+        "goal": "validate outputs and downgrade if parallel support was absent"
+      }
+    ],
+    "emit_optional_agents": false
+  },
+  "authoring_rules": [
+    "Reuse existing scripts where practical.",
+    "Keep SKILL.md concise; move long notes to references/.",
+    "Add dry-run gates before destructive steps.",
+    "Prefer repo-scoped .agents/skills unless user explicitly wants global install.",
+    "Mark unsupported runtime capabilities as degraded instead of pretending they ran."
+  ],
+  "benchmark_source": "official-openai-docs",
+  "next_files": [
+    ".agents/skills/excel-vba/SKILL.md",
+    ".agents/skills/excel-vba/scripts/*",
+    ".agents/skills/excel-vba/references/*",
+    "artifacts/benchmark_notes.md",
+    "artifacts/verification_report.md"
+  ],
+  "intent": "Refresh and verify the excel-vba skill package against current Codex documentation and local packaging rules."
+}

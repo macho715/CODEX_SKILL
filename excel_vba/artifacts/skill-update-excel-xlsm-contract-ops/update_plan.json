@@ -1,0 +1,66 @@
+{
+  "request": {
+    "mode": "update",
+    "target_skill": "excel-xlsm-contract-ops",
+    "repo_root": "c:\\Users\\SAMSUNG\\Downloads\\skill\\excel_vba",
+    "intent": "Refresh and verify the excel-xlsm-contract-ops companion skill against current Codex documentation and local packaging rules.",
+    "internet_allowed": true,
+    "allow_destructive": false,
+    "emit_optional_agents": false,
+    "notes": "Review the high-risk companion skill package without destructive changes."
+  },
+  "inventory_summary": {
+    "skill_count": 29,
+    "scanned_source_count": 3
+  },
+  "exact_matches": [],
+  "similar_matches": [],
+  "recommendations": [
+    {
+      "type": "create-new",
+      "reason": "No exact match found for 'excel-xlsm-contract-ops'. Create a new repo-scoped skill."
+    }
+  ],
+  "parallel_plan": {
+    "mode": "parallel-first",
+    "lanes": [
+      {
+        "lane": "A",
+        "name": "inventory-scout",
+        "goal": "discover skills, AGENTS.md, scripts, overlaps"
+      },
+      {
+        "lane": "B",
+        "name": "official-doc-scout",
+        "goal": "benchmark against latest official docs"
+      },
+      {
+        "lane": "C",
+        "name": "author-worker",
+        "goal": "author or patch the target skill"
+      },
+      {
+        "lane": "D",
+        "name": "verifier",
+        "goal": "validate outputs and downgrade if parallel support was absent"
+      }
+    ],
+    "emit_optional_agents": false
+  },
+  "authoring_rules": [
+    "Reuse existing scripts where practical.",
+    "Keep SKILL.md concise; move long notes to references/.",
+    "Add dry-run gates before destructive steps.",
+    "Prefer repo-scoped .agents/skills unless user explicitly wants global install.",
+    "Mark unsupported runtime capabilities as degraded instead of pretending they ran."
+  ],
+  "benchmark_source": "official-openai-docs",
+  "next_files": [
+    ".agents/skills/excel-xlsm-contract-ops/SKILL.md",
+    ".agents/skills/excel-xlsm-contract-ops/scripts/*",
+    ".agents/skills/excel-xlsm-contract-ops/references/*",
+    "artifacts/benchmark_notes.md",
+    "artifacts/verification_report.md"
+  ],
+  "intent": "Refresh and verify the excel-xlsm-contract-ops companion skill against current Codex documentation and local packaging rules."
+}

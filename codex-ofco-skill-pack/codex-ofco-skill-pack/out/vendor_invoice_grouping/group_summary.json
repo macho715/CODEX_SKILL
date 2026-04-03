@@ -1,0 +1,9 @@
+{
+  "skill": "vendor_invoice_grouping",
+  "vendor_group_count": 2,
+  "unassigned_count": 1,
+  "types": {
+    "SAFEEN": 1,
+    "ADP": 1
+  }
+}

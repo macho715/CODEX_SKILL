@@ -1,6 +1,6 @@
 interface:
   display_name: "Pagewise Translation Patch"
-  short_description: "Patch KR↔EN business/logistics documents page by page and output only changed phrases."
-  default_prompt: "Review the document end to end, patch only inaccurate or unnatural wording, and return only pagewise changed phrases."
+  short_description: "Clean Korean business documents into a natural standard internal style while preserving facts, numbers, names, tables, and structure."
+  default_prompt: "Refine the provided Korean document into a natural standard internal corporate style. Preserve facts, numbers, dates, proper nouns, contract details, conditions, bullets, and tables. Do not add information. Default to [정리본] plus [검수 메모] unless the user requests another mode."
 policy:
   allow_implicit_invocation: false

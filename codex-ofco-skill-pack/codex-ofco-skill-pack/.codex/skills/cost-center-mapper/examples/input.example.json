@@ -1,0 +1,44 @@
+{
+  "lines": [
+    {
+      "description": "SAFEEN INV-42727 – Channel Crossing – Rot# 2503123133",
+      "tariff_id": "6.6"
+    },
+    {
+      "description": "ADP INV-43159 – Port Dues & Services",
+      "tariff_id": "102.3"
+    },
+    {
+      "description": "Agency fee: Cargo Clearance – Trip"
+    }
+  ],
+  "cost_items": {
+    "cost_items": [
+      {
+        "code": "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT",
+        "qty_field": "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT_QTY",
+        "amount_field": "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT_AMOUNT"
+      },
+      {
+        "code": "PORT_DUES_FOR_VESSELS_WITH_ABOVE_1_000_UP_TO_3_001GT",
+        "qty_field": "PORT_DUES_FOR_VESSELS_WITH_ABOVE_1_000_UP_TO_3_001GT_QTY",
+        "amount_field": "PORT_DUES_FOR_VESSELS_WITH_ABOVE_1_000_UP_TO_3_001GT_AMOUNT"
+      },
+      {
+        "code": "AGENCY_FEE_FOR_CARGO_CLEARANCE",
+        "qty_field": "AGENCY_FEE_FOR_CARGO_CLEARANCE_QTY",
+        "amount_field": "AGENCY_FEE_FOR_CARGO_CLEARANCE_AMOUNT"
+      }
+    ]
+  },
+  "cost_item_fields": {
+    "cost_item_fields": [
+      "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT_QTY",
+      "CHANNEL_CROSSING_CHARGES_FOR_VESSELS_WITH_1000_TO_3_001_GT_AMOUNT",
+      "PORT_DUES_FOR_VESSELS_WITH_ABOVE_1_000_UP_TO_3_001GT_QTY",
+      "PORT_DUES_FOR_VESSELS_WITH_ABOVE_1_000_UP_TO_3_001GT_AMOUNT",
+      "AGENCY_FEE_FOR_CARGO_CLEARANCE_QTY",
+      "AGENCY_FEE_FOR_CARGO_CLEARANCE_AMOUNT"
+    ]
+  }
+}

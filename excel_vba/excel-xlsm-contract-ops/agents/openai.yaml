@@ -1,0 +1,7 @@
+interface:
+  display_name: "Excel XLSM Contract Ops"
+  short_description: "Mandatory risk gate for excel-vba and formatting workbook runs"
+  default_prompt: "Use $excel-xlsm-contract-ops first for every workbook run that will use $excel-vba or $excel-professional-formatting, classify risk, choose the downstream owner, and keep validation gates active through final delivery."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 <!-- PROJECT-DOC-ORCHESTRATOR:MANAGED -->
 <!-- PROJECT-DOC-ORCHESTRATOR:MANAGED-START -->
-# Observed Changelog For mstack
+# Observed Changelog For Skill Workspace
 
 ## Changelog Rule
 This file records observable project history from git metadata and documentation refresh events. It does not manufacture release notes.
@@ -9,41 +9,44 @@ This file records observable project history from git metadata and documentation
 ```mermaid
 timeline
     title Observed Repository Activity
-    2026-03-30 : Documentation refresh without git history
-    2026-03-30 : Added plugin-first Codex packaging and install flow for mstack
-    2026-03-30 : Added parallel 3-lane validation with automatic runtime-smoke patching
+    2026-04-02 : Vendor archived temp doc repos
+    2026-04-02 : Upload full SKILL workspace
 ```
 
 ## Recent Commits
-- No git commit history was available.
+- `2026-04-02` `ffb8f7c` Vendor archived temp doc repos
+- `2026-04-02` `7a2724a` Upload full SKILL workspace
 
 ## Current Working Tree Signals
-- No changed files were reported by git status.
+- ` M docs/project-docs/ARCHITECTURE.md`
+- ` M docs/project-docs/CHANGELOG.md`
+- ` M docs/project-docs/GUIDE.md`
+- ` M docs/project-docs/LAYOUT.md`
+- ` M docs/project-docs/PLAN.md`
+- ` M docs/project-docs/README.md`
+- ` M docs/project-docs/project_snapshot.json`
+- ` M excel_vba/README.md`
+- ` M excel_vba/VALIDATION.md`
+- ` M excel_vba/excel-vba/SKILL.md`
+- ` M excel_vba/excel-vba/agents/openai.yaml`
+- ` D "excel_vba/excel-vba/references/excel_vba_handoff_\354\232\264\354\230\201\354\262\264\355\201\254\353\246\254\354\212\244\355\212\270_20260401.md"`
 
 ## Documentation Refresh
-- `2026-03-30` Managed docs refreshed from current repository inspection.
-
-## Validation Signals
-- `mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py` now runs three parallel validation lanes in isolated virtual environments.
-- The validation lanes cover direct skill install, plugin install, and Codex runtime smoke.
-- The latest successful validation report was written to `mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T054531Z/`.
-- Runtime smoke was patched during validation to add trusted-directory bypass support and directory-safe artifact persistence.
+- `2026-04-03` Managed docs refreshed from current repository inspection.
 
 ## Evidence Files
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py`
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py`
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py`
-- `excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py`
-- `excel-style-skill-package/.system/skill-creator/scripts/init_skill.py`
-- `excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py`
-- `excel_vba/README.md`
-- `excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1`
-- `mstack-codex-package-1.1.0/source/README.md`
-- `mstack-codex-package-1.1.0/source/pyproject.toml`
-- `mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py`
-- `mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py`
-- `mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T054531Z/validation-summary.md`
-- `mstack-codex-package-1.1.0/source/tests/debug/README.md`
+- `README.md`
+- `codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/README.md`
+- `codex-openspace-merge-pack/README.md`
+- `codex-openspace-merge-pack/automation/requirements.txt`
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py`
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py`
 <!-- PROJECT-DOC-ORCHESTRATOR:MANAGED-END -->
 
 <!-- PROJECT-DOC-ORCHESTRATOR:PRESERVE-START -->

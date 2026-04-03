@@ -1,6 +1,6 @@
 <!-- PROJECT-DOC-ORCHESTRATOR:MANAGED -->
 <!-- PROJECT-DOC-ORCHESTRATOR:MANAGED-START -->
-# Working Guide For mstack
+# Working Guide For Skill Workspace
 
 ## Guide Rule
 Only commands and workflows verified from inspected manifests, scripts, and docs are included below.
@@ -19,71 +19,59 @@ sequenceDiagram
 ```
 
 ## Commands You Can Run
-- `npm run docs`
-- `npm run start`
 - `python -m mstack`
-- `python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py`
-- `python C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py --repo C:/Users/SAMSUNG/Downloads/skill/mstack-codex-package-1.1.0/source --keep-artifacts --skip-git-repo-check --timeout 240`
+- `python -m pip install -r requirements.txt`
+- `powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/excel-professional-formatting/scripts/run_excel_professional_formatting_validation.ps1`
 - `powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1`
-- `powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-parallel-test-20260330/scripts/build.ps1`
-- `powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/tmp-doc-orchestrator-smoke-20260329100642/scripts/build.ps1`
-- `python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py`
-- `python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py`
-- `python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py`
-- `python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py`
-- `python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/init_skill.py`
-- `python C:/Users/SAMSUNG/Downloads/skill/excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py`
+- `powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/plugins/excel-vba/skills/excel-vba/scripts/build-reopen-smoketest.ps1`
+- `powershell -ExecutionPolicy Bypass -File C:/Users/SAMSUNG/Downloads/skill/excel_vba/scripts/run_excel_vba_validation.ps1`
+- `python C:/Users/SAMSUNG/Downloads/skill/codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py`
+- `python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py`
+- `python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py`
+- `python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py`
+- `python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py`
+- `python C:/Users/SAMSUNG/Downloads/skill/codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py`
 
 ## Script Entry Points
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py`: """; OpenAI YAML Generator - Creates agents/openai.yaml for a skill folder.
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py`: """; Skill Initializer - Creates a new skill from template
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py`: """; Quick validation script for skills - minimal version
-- `excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py`: """; OpenAI YAML Generator - Creates agents/openai.yaml for a skill folder.
-- `excel-style-skill-package/.system/skill-creator/scripts/init_skill.py`: """; Skill Initializer - Creates a new skill from template
-- `excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py`: """; Quick validation script for skills - minimal version
-- `excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1`: [CmdletBinding()]; param(
-- `mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py`: """Runtime smoke test for Codex skills.; This script temporarily installs selected skills from ``skills-codex`` into the
-- `mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py`: """Parallel end-to-end validation runner for MStack Codex skills and plugin packaging.
-- `pdo-skill/scripts/doc_orchestrator_lib.py`: """Shared helpers for the project-doc-orchestrator skill."""; from __future__ import annotations
-- `pdo-skill/scripts/patch_docs.py`: """Refresh the managed documentation bundle for a project."""; from __future__ import annotations
-
-## Validation Workflow
-- Run `mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py` to execute the full plugin-first validation flow.
-- The runner builds the wheel once, creates isolated virtual environments, and executes three lanes in parallel.
-- The lanes validate direct skill install, plugin install with marketplace generation, and Codex runtime smoke for all 9 `mstack-*` skills.
-- JSON and Markdown reports are written under `mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/<timestamp>/`.
-- The latest successful report directory observed during inspection is `mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T054531Z/`.
+- `codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py`: """Deterministic weighted scenario scorer.; Usage:
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py`: import json; import re
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py`: import json; import sys
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py`: import json; import math
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py`: import csv; import json
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py`: import json; import sys
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py`: from __future__ import annotations; import argparse
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py`: from __future__ import annotations; import argparse
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/validate_outputs.py`: from __future__ import annotations; import argparse
+- `design-upgrade-loop-package/design-upgrade-loop-package/.agents/skills/design-upgrade-loop/scripts/validate_design_scorecard.py`: """Validate a design-upgrade scorecard and print a PASS/FAIL summary.; Usage:
 
 ## Documentation Inputs
-- `excel_vba/README.md`: excel-vba Skill Repo
-- `mstack-codex-package-1.1.0/source/README.md`: ccat — Claude Code Agent Teams CLI
-- `mstack-codex-package-1.1.0/source/tests/debug/README.md`: tests/debug/
-- `source/README.md`: ccat — Claude Code Agent Teams CLI
-- `source/docs/ARCHITECTURE.md`: System Architecture — mstack (ccat)
-- `source/docs/CHANGELOG.md`: Changelog — mstack (ccat)
-- `source/docs/getting-started.md`: mstack 시작하기 (Getting Started)
-- `source/docs/LAYOUT.md`: Project Layout — mstack (ccat)
-- `source/docs/README.md`: mstack (ccat) — Claude Code Agent Teams CLI
-- `source/docs/user-guide.md`: mstack 사용자 가이드 (v1.4)
+- `README.md`: Skill Workspace
+- `codex/word-style-package-20260403/README.md`: word-style-package-20260403
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/README.md`: Codex OFCO Skill Pack
+- `codex-openspace-merge-pack/README.md`: Codex + OpenSpace Merge Pack
+- `codex-skill-update-pack/README.md`: codex-skill-update-pack
+- `codex_excel_risk_pack/codex_excel_risk_pack/README-CODEX-EXCEL-RISK-PACK.md`: Codex Excel High-Risk Pack
+- `codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/benchmark-notes-2026.md`: Benchmark Notes (2026)
+- `codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/excel-runtime-runbook.md`: Excel Runtime Runbook
+- `codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/prompt-examples.md`: Prompt Examples
+- `codex_excel_risk_pack/codex_excel_risk_pack/docs/ops/validation-checklist.md`: Validation Checklist
 
 ## Evidence Files
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/generate_openai_yaml.py`
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/init_skill.py`
-- `excel-style-skill-package/.agents/skills/.system/skill-creator/scripts/quick_validate.py`
-- `excel-style-skill-package/.system/skill-creator/scripts/generate_openai_yaml.py`
-- `excel-style-skill-package/.system/skill-creator/scripts/init_skill.py`
-- `excel-style-skill-package/.system/skill-creator/scripts/quick_validate.py`
-- `excel_vba/README.md`
-- `excel_vba/excel-vba/scripts/build-reopen-smoketest.ps1`
-- `mstack-codex-package-1.1.0/source/README.md`
-- `mstack-codex-package-1.1.0/source/pyproject.toml`
-- `mstack-codex-package-1.1.0/source/scripts/codex_runtime_smoke.py`
-- `mstack-codex-package-1.1.0/source/scripts/run_codex_skill_validation.py`
-- `mstack-codex-package-1.1.0/source/skills-workspace/validation-reports/20260330T054531Z/validation-summary.md`
-- `mstack-codex-package-1.1.0/source/tests/debug/README.md`
+- `README.md`
+- `codex-multi-agent-pack/codex-multi-agent-pack/.agents/skills/scenario-scorer/scripts/score_options.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/cost-center-mapper/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/flow-code-validator/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/invoice-match-verify/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/ofco-lines-export/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/.codex/skills/vendor-invoice-grouping/scripts/run.py`
+- `codex-ofco-skill-pack/codex-ofco-skill-pack/README.md`
+- `codex-openspace-merge-pack/README.md`
+- `codex-openspace-merge-pack/automation/requirements.txt`
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/build_update_plan.py`
+- `codex-skill-update-pack/.agents/skills/skill-update/scripts/scan_skill_graph.py`
 
 ## Refresh Metadata
-- Generated at: `2026-03-30T05:45:31+00:00`
+- Generated at: `2026-04-03T17:14:40+00:00`
 <!-- PROJECT-DOC-ORCHESTRATOR:MANAGED-END -->
 
 <!-- PROJECT-DOC-ORCHESTRATOR:PRESERVE-START -->

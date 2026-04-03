@@ -1,0 +1,31 @@
+{
+  "results": [
+    {
+      "row_id": "R1",
+      "status": "MATCHED",
+      "bj_amount": 1800.0,
+      "subject": "Agency fee: Berthing Arrangement / Channel Transit Permission / Pilot Arrangement",
+      "invoice_no": "OFCO-INV-0000181",
+      "best_match": {
+        "score": 1.0,
+        "deviation_pct": 0.0,
+        "reference_no": 2001,
+        "invoice_no": "OFCO-INV-0000181",
+        "subject": "Agency fee: Berthing Arrangement / Channel Transit Permission / Pilot Arrangement",
+        "amount_aed": 1800.0,
+        "samsung_ref": "HVDC-AGI-GRM-J71-47"
+      },
+      "top_candidates": [
+        {
+          "score": 1.0,
+          "deviation_pct": 0.0,
+          "reference_no": 2001,
+          "invoice_no": "OFCO-INV-0000181",
+          "subject": "Agency fee: Berthing Arrangement / Channel Transit Permission / Pilot Arrangement",
+          "amount_aed": 1800.0,
+          "samsung_ref": "HVDC-AGI-GRM-J71-47"
+        }
+      ]
+    }
+  ]
+}

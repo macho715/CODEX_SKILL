@@ -1,0 +1,16 @@
+# .codex/config.toml
+# Excel 고위험 저장소용 기본값
+# 목적: 기본은 안전, 병렬은 명시 요청 기반, same-workbook write는 보수적으로 제한
+
+approval_policy = "untrusted"
+sandbox_mode = "workspace-write"
+allow_login_shell = false
+web_search = "live"
+
+[sandbox_workspace_write]
+network_access = true
+
+[agents]
+max_threads = 4
+max_depth = 1
+job_max_runtime_seconds = 1800

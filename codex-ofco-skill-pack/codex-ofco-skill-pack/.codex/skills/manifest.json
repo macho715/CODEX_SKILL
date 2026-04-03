@@ -1,0 +1,58 @@
+{
+  "package_name": "codex-ofco-skill-pack",
+  "package_version": "1.0.0",
+  "target": "OpenAI Codex",
+  "verified_on": "2026-04-01",
+  "source_status": {
+    "user_payload": "ACCESSIBLE",
+    "project_ssot": "ACCESSIBLE",
+    "official_codex_docs": "RECHECKED"
+  },
+  "skills": [
+    {
+      "name": "invoice-match-verify",
+      "description": "Match target invoice rows to structured OFCO reference lines and verify amount tolerance with evidence-backed scoring.",
+      "entrypoint": ".codex/skills/invoice-match-verify/scripts/run.py",
+      "outputs": [
+        "out/invoice_match_verify/match_results.json",
+        "out/invoice_match_verify/summary.json"
+      ]
+    },
+    {
+      "name": "cost-center-mapper",
+      "description": "Map subject and tariff patterns into COST MAIN, COST CENTER A/B, PRICE CENTER, and immutable qty/amount fields.",
+      "entrypoint": ".codex/skills/cost-center-mapper/scripts/run.py",
+      "outputs": [
+        "out/cost_center_mapper/mapped_lines.json",
+        "out/cost_center_mapper/mapping_summary.json"
+      ]
+    },
+    {
+      "name": "vendor-invoice-grouping",
+      "description": "Group normalized lines by vendor_invoice_no, infer invoice type with tariff-first rules, and calculate per-group totals.",
+      "entrypoint": ".codex/skills/vendor-invoice-grouping/scripts/run.py",
+      "outputs": [
+        "out/vendor_invoice_grouping/grouped_vendor_invoices.json",
+        "out/vendor_invoice_grouping/group_summary.json"
+      ]
+    },
+    {
+      "name": "ofco-lines-export",
+      "description": "Export standardized OFCO, SAFEEN, and ADP lines into the fixed Lines schema with calc checks and evidence fields.",
+      "entrypoint": ".codex/skills/ofco-lines-export/scripts/run.py",
+      "outputs": [
+        "out/ofco_lines_export/lines.csv",
+        "out/ofco_lines_export/lines.json"
+      ]
+    },
+    {
+      "name": "flow-code-validator",
+      "description": "Infer and validate Flow Code 0-5 using destination, warehouse leg, and MOSB leg rules for HVDC logistics.",
+      "entrypoint": ".codex/skills/flow-code-validator/scripts/run.py",
+      "outputs": [
+        "out/flow_code_validator/validated_shipments.json",
+        "out/flow_code_validator/flow_summary.json"
+      ]
+    }
+  ]
+}

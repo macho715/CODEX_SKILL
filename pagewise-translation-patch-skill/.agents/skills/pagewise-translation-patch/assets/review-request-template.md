@@ -1,20 +1,21 @@
 # Review Request Template
 
-- source_language:
-- target_language:
-- mixed_bilingual_document: yes/no
-- document_type: report / presentation / memo / email / procedure / mixed
-- domain: general-business / logistics / marine / project
-- audience: executive / client / internal / vendor / mixed
-- locale:
-- output_mode: standard / strict-patch-only
-- glossary_path:
-- prior_translation_paths:
-- do_not_translate:
+- mode: 전체 정리 / 패치 목록 / 나란히 비교 / 본문만
+- pagewise_grouping: yes / no
+- structure_change_allowed: no
+- source_language: ko
+- target_style: standard-internal-korean
+- document_type: approval / report / memo / proposal / presentation / mixed
+- audience: executive / internal / client / vendor / mixed
 - preserve_as_is:
+- controlled_items:
+- glossary_path:
+- do_not_change:
 - special_notes:
 
 ## Optional instruction
-- Use company report tone in Korean.
-- Use business English in English.
-- Output only changed phrases page by page.
+
+- Keep facts, numbers, dates, names, contract details, units, periods, and conditions unchanged.
+- Preserve headings, numbering, bullets, tables, and attachment lists.
+- Do not add background, interpretation, or conclusions.
+- If uncertain, keep the original wording and mention it in `[검수 메모]`.

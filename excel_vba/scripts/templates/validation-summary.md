@@ -13,6 +13,12 @@
 - Notes:
 - Artifacts:
 
+### contract-pack
+- Status:
+- Checks:
+- Notes:
+- Artifacts:
+
 ### plugin-package
 - Status:
 - Checks:

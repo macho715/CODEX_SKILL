@@ -12,6 +12,13 @@
       "artifacts": []
     },
     {
+      "lane": "contract-pack",
+      "status": "",
+      "checks": [],
+      "notes": [],
+      "artifacts": []
+    },
+    {
       "lane": "plugin-package",
       "status": "",
       "checks": [],

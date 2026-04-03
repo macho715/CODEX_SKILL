@@ -19,7 +19,7 @@ Use this file to adapt the response to the maturity of the user's request.
 - first data row: `2`
 - output file: `./output/result.xlsx` or a `Result` sheet inside the source workbook
 
-Mark each inferred value with `⚠️가정:`.
+Mark each inferred value with `Assumption`.
 
 ## Refinement stage
 - Replace defaults with user-provided sheet names, headers, paths, file formats, and macro-preservation rules.

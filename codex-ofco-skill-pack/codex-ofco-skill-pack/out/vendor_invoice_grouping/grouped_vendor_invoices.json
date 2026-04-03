@@ -1,0 +1,51 @@
+{
+  "vendor_invoices": {
+    "SAFEEN INV-83291": {
+      "vendor_invoice_no": "SAFEEN INV-83291",
+      "invoice_type": "SAFEEN",
+      "lines": [
+        {
+          "vendor_invoice_no": "SAFEEN INV-83291",
+          "tariff_id": "6.6",
+          "description": "SAFEEN channel crossing",
+          "amount_excl_tax_aed": 3091.25,
+          "tax_amount_aed": 0.0,
+          "amount_excl_tax": 0.0,
+          "tax_amount": 0.0
+        }
+      ],
+      "total_amount_aed": 3091.25,
+      "total_amount_usd": 0.0,
+      "total_tax_aed": 0.0,
+      "total_tax_usd": 0.0
+    },
+    "ADP INV-84402": {
+      "vendor_invoice_no": "ADP INV-84402",
+      "invoice_type": "ADP",
+      "lines": [
+        {
+          "vendor_invoice_no": "ADP INV-84402",
+          "tariff_id": "2.20",
+          "description": "VAT - Document Processing Charge",
+          "amount_excl_tax_aed": 35.0,
+          "tax_amount_aed": 0.0,
+          "amount_excl_tax": 0.0,
+          "tax_amount": 0.0
+        }
+      ],
+      "total_amount_aed": 35.0,
+      "total_amount_usd": 0.0,
+      "total_tax_aed": 0.0,
+      "total_tax_usd": 0.0
+    }
+  },
+  "unassigned_lines": [
+    {
+      "description": "Agency fee: Cargo Clearance – Trip",
+      "amount_excl_tax_aed": 500.0,
+      "tax_amount_aed": 0.0,
+      "amount_excl_tax": 0.0,
+      "tax_amount": 0.0
+    }
+  ]
+}

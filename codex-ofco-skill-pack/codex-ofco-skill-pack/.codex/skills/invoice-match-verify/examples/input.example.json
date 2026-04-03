@@ -1,0 +1,37 @@
+{
+  "target_rows": [
+    {
+      "row_id": "R1",
+      "bj_amount": 1800.0,
+      "subject": "Agency fee: Berthing Arrangement / Channel Transit Permission / Pilot Arrangement",
+      "invoice_no": "OFCO-INV-0000181",
+      "samsung_ref": "HVDC-AGI-GRM-J71-47"
+    },
+    {
+      "row_id": "R2",
+      "bj_amount": 454.58,
+      "subject": "Supply of 5000 IG FW on 04-Apr-2025",
+      "invoice_no": "OFCO-INV-0000181",
+      "samsung_ref": "HVDC-AGI-GRM-J71-47"
+    }
+  ],
+  "reference_records": {
+    "202503": [
+      {
+        "NO.": 2001,
+        "SAMSUNG REF": "HVDC-AGI-GRM-J71-47",
+        "SUBJECT": "Agency fee: Berthing Arrangement / Channel Transit Permission / Pilot Arrangement",
+        "INVOICE NUMBER (OFCO)": "OFCO-INV-0000181",
+        "Amount (AED)": 1800.0
+      },
+      {
+        "NO.": 2003,
+        "SAMSUNG REF": "HVDC-AGI-GRM-J71-47",
+        "SUBJECT": "Supply of 5000 IG FW on 04-Apr-2025",
+        "INVOICE NUMBER (OFCO)": "OFCO-INV-0000181",
+        "Amount (AED)": 454.58
+      }
+    ]
+  },
+  "tolerance_pct": 2.0
+}

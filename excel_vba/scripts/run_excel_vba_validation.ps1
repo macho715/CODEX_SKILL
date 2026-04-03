@@ -11,14 +11,19 @@ $runDir = Join-Path $OutputRoot $timestamp
 New-Item -ItemType Directory -Path $runDir -Force | Out-Null
 
 $skillRoot = Join-Path $RootPath "excel-vba"
+$contractSkillRoot = Join-Path $RootPath "excel-xlsm-contract-ops"
 $pluginRoot = Join-Path $RootPath "plugins\excel-vba"
 $localSkillRoot = Join-Path $env:USERPROFILE ".codex\skills\excel-vba"
+$localContractSkillRoot = Join-Path $env:USERPROFILE ".codex\skills\excel-xlsm-contract-ops"
 $localPluginRoot = Join-Path $env:USERPROFILE "plugins\excel-vba"
 $marketplacePath = Join-Path $env:USERPROFILE ".agents\plugins\marketplace.json"
 $configPath = Join-Path $env:USERPROFILE ".codex\config.toml"
+$agentsRoot = Join-Path $RootPath ".codex\agents"
+$heartbeatPath = Join-Path $RootPath "heartbeat.md"
+$docsOpsRoot = Join-Path $RootPath "docs\ops"
 
 $jobScript = {
-    param($LaneName, $SkillRoot, $RepoRoot, $PluginRoot, $LocalSkillRoot, $LocalPluginRoot, $MarketplacePath, $ConfigPath)
+    param($LaneName, $SkillRoot, $ContractSkillRoot, $RepoRoot, $PluginRoot, $LocalSkillRoot, $LocalContractSkillRoot, $LocalPluginRoot, $MarketplacePath, $ConfigPath, $AgentsRoot, $HeartbeatPath, $DocsOpsRoot)
 
     function New-LaneBlockLocal {
         param(
@@ -83,6 +88,58 @@ $jobScript = {
             }
 
             New-LaneBlockLocal -Name $LaneName -Status $status -Checks $checks -Notes $notes -Artifacts @($skillMd, $skillDisabled, $openAi, $openAiDisabled)
+        }
+        "contract-pack" {
+            $contractSkill = Join-Path $ContractSkillRoot "SKILL.md"
+            $contractAgent = Join-Path $ContractSkillRoot "agents\openai.yaml"
+            $contractRefs = Join-Path $ContractSkillRoot "references"
+            $embeddedContractSkill = Join-Path $PluginRoot "skills\excel-xlsm-contract-ops"
+            $docsChecklist = Join-Path $DocsOpsRoot "validation-checklist.md"
+            $docsPrompt = Join-Path $DocsOpsRoot "prompt-examples.md"
+            $docsRunbook = Join-Path $DocsOpsRoot "excel-runtime-runbook.md"
+            $docsBenchmark = Join-Path $DocsOpsRoot "benchmark-notes-2026.md"
+
+            $checks = @(
+                "companion skill present",
+                "plugin companion skill present",
+                "root guardrails present",
+                "heartbeat present",
+                ".codex/agents present",
+                "docs/ops present"
+            )
+            $notes = @()
+            $status = "pass"
+
+            foreach ($path in @($contractSkill, $contractAgent, $contractRefs, $embeddedContractSkill, $AgentsRoot, $HeartbeatPath, $docsChecklist, $docsPrompt, $docsRunbook, $docsBenchmark)) {
+                if (-not (Test-Path -LiteralPath $path)) {
+                    if ($status -eq "pass") { $status = "warning" }
+                    $notes += "missing $([System.IO.Path]::GetFileName($path))"
+                }
+            }
+
+            if (Test-Path -LiteralPath $contractSkill) { $notes += "companion skill found" }
+            if ((Test-Path -LiteralPath $ContractSkillRoot) -and (Test-Path -LiteralPath $embeddedContractSkill)) {
+                $sourceFiles = Get-ChildItem -LiteralPath $ContractSkillRoot -Recurse -File | ForEach-Object {
+                    $_.FullName.Substring($ContractSkillRoot.Length).TrimStart('\')
+                }
+                $embeddedFiles = Get-ChildItem -LiteralPath $embeddedContractSkill -Recurse -File | ForEach-Object {
+                    $_.FullName.Substring($embeddedContractSkill.Length).TrimStart('\')
+                }
+
+                $contractDiff = Compare-Object -ReferenceObject $sourceFiles -DifferenceObject $embeddedFiles
+                if ($contractDiff) {
+                    if ($status -eq "pass") { $status = "warning" }
+                    $notes += "embedded contract-pack skill differs from source contract-pack skill"
+                }
+                else {
+                    $notes += "embedded contract-pack skill matches source file list"
+                }
+            }
+            if (Test-Path -LiteralPath $AgentsRoot) { $notes += "repo .codex/agents present" }
+            if (Test-Path -LiteralPath $HeartbeatPath) { $notes += "heartbeat.md present" }
+            if (Test-Path -LiteralPath $DocsOpsRoot) { $notes += "docs/ops present" }
+
+            New-LaneBlockLocal -Name $LaneName -Status $status -Checks $checks -Notes $notes -Artifacts @($contractSkill, $contractAgent, $contractRefs, $embeddedContractSkill, $AgentsRoot, $HeartbeatPath, $docsChecklist, $docsPrompt, $docsRunbook, $docsBenchmark)
         }
         "plugin-package" {
             $pluginJson = Join-Path $PluginRoot ".codex-plugin\plugin.json"
@@ -154,7 +211,7 @@ $jobScript = {
             $checks = @(
                 "local install script exists",
                 "plugin install script exists",
-                "Codex skill folder exists",
+                "repo contract-pack skill exists",
                 "plugin folder exists",
                 "marketplace path exists",
                 "config indicates plugin support"
@@ -177,6 +234,14 @@ $jobScript = {
             else {
                 if ($status -eq "pass") { $status = "warning" }
                 $notes += "local Codex skill folder not found"
+            }
+
+            if (Test-Path -LiteralPath $ContractSkillRoot) {
+                $notes += "repo contract-pack skill folder present"
+            }
+            else {
+                $status = "fail"
+                $notes += "repo contract-pack skill folder not found"
             }
 
             if (Test-Path -LiteralPath $LocalPluginRoot) {
@@ -258,9 +323,9 @@ $jobScript = {
     }
 }
 
-$lanes = @("skill-structure", "plugin-package", "install-registration", "qa-contract")
+$lanes = @("skill-structure", "contract-pack", "plugin-package", "install-registration", "qa-contract")
 $jobs = foreach ($lane in $lanes) {
-    Start-Job -ScriptBlock $jobScript -ArgumentList $lane, $skillRoot, $RootPath, $pluginRoot, $localSkillRoot, $localPluginRoot, $marketplacePath, $configPath
+    Start-Job -ScriptBlock $jobScript -ArgumentList $lane, $skillRoot, $contractSkillRoot, $RootPath, $pluginRoot, $localSkillRoot, $localContractSkillRoot, $localPluginRoot, $marketplacePath, $configPath, $agentsRoot, $heartbeatPath, $docsOpsRoot
 }
 
 Wait-Job -Job $jobs | Out-Null

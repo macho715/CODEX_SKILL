@@ -1,0 +1,28 @@
+{
+  "validated_shipments": [
+    {
+      "shipment_id": "S1",
+      "final_location": "AGI",
+      "current_flow_code": 3,
+      "pre_arrival": false,
+      "requires_warehouse_storage": false,
+      "mosb_leg": true,
+      "site_assigned": true,
+      "expected_flow_code": 3,
+      "reason": "offshore via MOSB",
+      "status": "PASS"
+    },
+    {
+      "shipment_id": "S2",
+      "final_location": "MIR",
+      "current_flow_code": 2,
+      "pre_arrival": false,
+      "requires_warehouse_storage": true,
+      "mosb_leg": false,
+      "site_assigned": true,
+      "expected_flow_code": 2,
+      "reason": "onshore via warehouse",
+      "status": "PASS"
+    }
+  ]
+}
